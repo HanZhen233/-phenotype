@@ -9,8 +9,8 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
 
-
-
+        <script type="text/javascript" src="js/backbutton.js"></script>
+        <script type="text/javascript" src="js/cordova.js"></script>
         <!--引入jQuery及Mobile-->
         <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
         <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
@@ -21,11 +21,10 @@
 
     </head>
     <body>
-    <div data-role="page">
+    <div data-role="page" id="page_index">
         <div data-role="header" data-position="fixed">
             <h1>数据记录</h1>
         </div>
-
         <!--<div data-role="content">-->
             <ul data-role="listview"   data-filter="true"
                 data-inset="true" style="margin-top:10px">
@@ -47,16 +46,19 @@
             </ul>
         <!--</div>-->
 
-
         <div data-role="footer" data-position="fixed">
-            <div data-role="navbar">
-                <ul>
-                    <li><a id="data1" href="index.html" data-icon="record">数据记录 </a></li>
-                    <li><a id="data2" href="dataTransmission.html" data-icon="file_transfer">数据导入导出 </a></li>
-                    <li><a id="data3" href="setting.html" data-icon="setting">设置 </a></li>
-                </ul>
-            </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a  href="index.html" data-icon="record">数据记录 </a></li>
+                <li><a  href="dataTransmission.html" data-icon="file_transfer">数据导入导出 </a></li>
+                <li><a  href="setting.html" data-icon="setting">设置 </a></li>
+            </ul>
         </div>
     </div>
+    </div>
+
+
+
+
     </body>
 </html>

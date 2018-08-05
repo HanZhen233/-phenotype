@@ -9,6 +9,12 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.hanzhen.cordova"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.hanzhen.cordova"
+    },
+    "cordova-plugin-backbutton": {
+      "PACKAGE_NAME": "com.hanzhen.cordova"
     }
   },
   "dependent_plugins": {}

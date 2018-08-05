@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- \
+
         <meta http-equiv="Content-Security-Policy" content=" style-src 'self' 'unsafe-inline'; media-src *">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
@@ -10,7 +10,8 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
 
-
+    <script type="text/javascript" src="js/backbutton.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
     <!--引入jQuery及Mobile-->
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
@@ -18,13 +19,18 @@
     <!--引入自定义CSS及js-->
     <link rel="stylesheet " href="css/jqbar.css">
 
+
+    <script type="text/javascript" charset="utf-8">
+
+
+    </script>
+
 </head>
 <body>
-<div data-role="page">
+<div data-role="page" id="setting">
     <div data-role="header" data-position="fixed">
         <h1>设置</h1>
     </div>
-
     <div data-role="content">
         <br/>
         <br/>
@@ -35,8 +41,6 @@
         <a href="#" data-role="button">删除数据</a>
         <a href="#" data-role="button">设置手机传输端口</a>
     </div>
-
-
 
     <div data-role="footer" data-position="fixed">
         <div data-role="navbar">

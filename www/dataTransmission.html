@@ -1,47 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta http-equiv="Content-Security-Policy" content=" style-src 'self' 'unsafe-inline'; media-src *">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
+<head>
+    <meta http-equiv="Content-Security-Policy" content=" style-src 'self' 'unsafe-inline'; media-src *">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
 
-        <script type="text/javascript" src="js/backbutton.js"></script>
-        <!--引入jQuery及Mobile-->
-        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
-        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
-        <!--引入自定义CSS及js-->
-        <link rel="stylesheet " href="css/jqbar.css">
-        <link rel="stylesheet" href="css/data_transfer.css">
-    </head>
+    <script type="text/javascript" src="js/backbutton.js"></script>
+    <!--引入jQuery及Mobile-->
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+    <!--引入自定义CSS及js-->
+    <link rel="stylesheet " href="css/jqbar.css">
+    <link rel="stylesheet" href="css/data_transfer.css">
+</head>
+
 <body>
-<div data-role="page" id="dataTransmission">
-    <div data-role="header" data-position="fixed">
-        <h1>数据传输</h1>
-    </div>
-    <div data-role="content">
-        <p align="center"><img src="img/wifi.png" height="100"width="100"></p>
-        <p align="center">请确保您的手机和电脑在同一局域网中，上传过程中请勿关闭此页面。</p>
-        <p></p>
-    </div>
-    <div>
+    <div data-role="page" id="dataTransmission">
+        <div data-role="header" data-position="fixed">
+            <h1>数据传输</h1>
+        </div>
+        <div data-role="content">
+            <p align="center">
+                <img src="img/wifi.png" height="100" width="100">
+            </p>
+            <p align="center">请确保您的手机和电脑在同一局域网中，上传过程中请勿关闭此页面。</p>
+            <p></p>
+        </div>
+        <div>
 
-    </div>
-    <div  data-role="footer" data-position="fixed">
-        <div data-role="navbar">
-            <ul>
-                <li><a id="data1" href="index.html" data-icon="record">数据记录 </a></li>
-                <li><a id="data2" href="dataTransmission.html" data-icon="file_transfer">数据导入导出 </a></li>
-                <li><a id="data3" href="setting.html" data-icon="setting">设置 </a></li>
-            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a id="data1" href="index.html" data-icon="record">数据记录 </a>
+                    </li>
+                    <li>
+                        <a id="data2" href="dataTransmission.html" data-icon="file_transfer">数据导入导出 </a>
+                    </li>
+                    <li>
+                        <a id="data3" href="setting.html" data-icon="setting">设置 </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
-
+    <script src="js/index.js"></script>
+    <script src="js/backbutton.js"></script>
 </body>
+
 </html>

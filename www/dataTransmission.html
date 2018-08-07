@@ -10,27 +10,45 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
 
-    <script type="text/javascript" src="js/backbutton.js"></script>
+
     <!--引入jQuery及Mobile-->
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
-    <!--引入自定义CSS及js-->
+
+    <!--引入自定义CSS-->
+    <!--底部导航栏样式-->
     <link rel="stylesheet " href="css/jqbar.css">
+    <!--数据传输界面样式-->
     <link rel="stylesheet" href="css/data_transfer.css">
+
+    <!--引入自定义js-->
+    <!--主界面返回按钮直接退出js-->
+    <script type="text/javascript" src="js/backbutton.js"></script>
+    <!--开启服务器js-->
+    <script type="text/javascript" src="js/start-server.js"></script>
+    <!--跳转主界面js-->
+    <script type="text/javascript"src="js/skip.js"></script>
 </head>
 
 <body>
-    <div data-role="page" id="dataTransmission">
+    <div data-role="page" >
         <div data-role="header" data-position="fixed">
             <h1>数据传输</h1>
         </div>
-        <div data-role="content">
-            <p align="center">
+        <div id="transfer" data-role="content">
+            <p >
                 <img src="img/wifi.png" height="100" width="100">
             </p>
-            <p align="center">请确保您的手机和电脑在同一局域网中，上传过程中请勿关闭此页面。</p>
-            <p></p>
+            <p >请确保您的手机和电脑在同一局域网中，上传过程中请勿关闭此页面。</p>
+           <br>
+            <br>
+            <br>
+            <button id="connect">启用服务</button>
+            <br>
+            <br>
+            <p id="show_tips"></p>
+            <p id="url"></p>
         </div>
         <div>
 
@@ -38,21 +56,20 @@
         <div data-role="footer" data-position="fixed">
             <div data-role="navbar">
                 <ul>
-                    <li>
-                        <a id="data1" href="index.html" data-icon="record">数据记录 </a>
+                    <li id="page_index">
+                        <a  data-icon="record">数据记录 </a>
                     </li>
-                    <li>
-                        <a id="data2" href="dataTransmission.html" data-icon="file_transfer">数据导入导出 </a>
+                    <li id="page_dataTransmission">
+                        <a   data-icon="file_transfer">数据导入导出 </a>
                     </li>
-                    <li>
-                        <a id="data3" href="setting.html" data-icon="setting">设置 </a>
+                    <li id="page_setting">
+                        <a data-icon="setting">设置 </a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-    <script src="js/index.js"></script>
-    <script src="js/backbutton.js"></script>
+
 </body>
 
 </html>

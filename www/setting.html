@@ -17,14 +17,18 @@
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
-    <!--引入自定义CSS及js-->
+
+    <!--引入自定义CSS-->
+    <!--底部导航栏样式-->
     <link rel="stylesheet " href="css/jqbar.css">
 
 
-    <script type="text/javascript" charset="utf-8">
+    <!--引入自定义js-->
+    <!--主界面返回按钮直接退出js-->
+    <script type="text/javascript" src="js/backbutton.js"></script>
+    <!--跳转三主界面js-->
+    <script type="text/javascript"src="js/skip.js"></script>
 
-
-    </script>
 
 </head>
 
@@ -47,16 +51,15 @@
         <div data-role="footer" data-position="fixed">
             <div data-role="navbar">
                 <ul>
-                    <li>
-                        <a id="data1" href="index.html" data-icon="record">数据记录 </a>
+                    <li id="page_index">
+                        <a  data-icon="record">数据记录 </a>
                     </li>
-                    <li>
-                        <a id="data2" href="dataTransmission.html" data-icon="file_transfer">数据导入导出 </a>
+                    <li id="page_dataTransmission">
+                        <a   data-icon="file_transfer">数据导入导出 </a>
                     </li>
-                    <li>
-                        <a id="data3" href="setting.html" data-icon="setting">设置 </a>
+                    <li id="page_setting">
+                        <a data-icon="setting">设置 </a>
                     </li>
-
                 </ul>
             </div>
         </div>

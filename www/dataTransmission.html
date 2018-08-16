@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
-
+    <!--js-xlsx库-->
+    <script type="text/javascript" src="js/xlsx.full.min.js"></script>
     <!--引入自定义CSS-->
     <!--底部导航栏样式-->
     <link rel="stylesheet " href="css/jqbar.css">
@@ -29,6 +30,9 @@
     <script type="text/javascript" src="js/start-server.js"></script>
     <!--跳转主界面js-->
     <script type="text/javascript"src="js/skip.js"></script>
+
+    <!--导入模版与数据-->
+    <script type="text/javascript" src="js/import-temp-data.js"></script>
 </head>
 
 <body>
@@ -36,23 +40,27 @@
         <div data-role="header" data-position="fixed">
             <h1>数据传输</h1>
         </div>
+
+        <!--主体内容-->
         <div id="transfer" data-role="content">
-            <p >
-                <img src="img/wifi.png" height="100" width="100">
-            </p>
-            <p >请确保您的手机和电脑在同一局域网中，上传过程中请勿关闭此页面。</p>
-           <br>
+            <div>
+                <p>导入</p>
+            <p> 请选择要选择导入的模版文件</p>
+            <input type="file" onchange="importTemplate(this)">
+            <div id="demo"> </div>
             <br>
-            <br>
-            <button id="connect">启用服务</button>
-            <br>
-            <br>
-            <p id="show_tips"></p>
-            <p id="url"></p>
-        </div>
-        <div>
+            <p>请选择对应的模版</p>
+                <button onclick="showTemplates()">确认</button>
+                <div id="showTemplates"></div>
+            </div>
+
 
         </div>
+
+
+
+
+        <!--底部导航栏-->
         <div data-role="footer" data-position="fixed">
             <div data-role="navbar">
                 <ul>

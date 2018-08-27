@@ -39,7 +39,6 @@ function importTemplate(obj) {//导入
         if(z[0]==t&&sheet0[z].v!="性状名称"&&sheet0[z].v!="数据类型")
             str[ke]=sheet0[z].v;
         }
-
         var templates=new Array();
         var str1=obj.files[0].name;
         templates=str1.split(".");
@@ -118,6 +117,10 @@ function importData(obj) {
         // }
      //使用indexedDB实现
         createDatabases(wb,tempName,dataName);
+        // 储存模版与数据的关系
+      var r=window.localStorage.getItem('');
+
+
     };
     reader.readAsBinaryString(f);
 }
@@ -174,6 +177,9 @@ function createDatabases(wb,tempName,dataName) {
     request.onsuccess=function (ev) {
         // alert('已清除该模版的数据库，请重新导入');
         // indexedDB.deleteDatabase(tempName);
+        // db=ev.target.result;
+        // var name=db.objectStoreNames;
+        // alert(name[0]);
     }
 
         request.onupgradeneeded=function (ev) {

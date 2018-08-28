@@ -40,9 +40,9 @@ function displayDataList() {
         db=ev.target.result;
         if (db.objectStoreNames.length==0){
             $("#mainPage").append('<p align="center">什么数据都没有哦！</p>');
+            window.indexedDB.deleteDatabase(tempName);
         }
         else {
-
 
             var dataNames = db.objectStoreNames;//获取数据表名
             var dataName = dataNames[0];
@@ -55,7 +55,7 @@ function displayDataList() {
             var cursor=ev2.target.result;
             if(cursor){
                 var  li=$('<li></li>');
-                var  a=$('<a>'
+                var  a=$('<a onclick="toDataRecord(this)">'
                     +cursor.primaryKey+'</a>');
                 li.append(a);
                 $('#dataList').append(li);
@@ -68,16 +68,19 @@ function displayDataList() {
             re.onerror=function (ev2) {
                 alert('打开数据库出错！');
             }
-
-
-
-
         }
-
     }
+}
 
 
+function  toDataRecord(obj) {
+    var dataKey=obj.text;
+    var loc=location.href;
+    var n1=loc.length;
+    var n2=loc.indexOf('=');
+    var tempName=decodeURI(loc.substr(n2+1,n1-n2));
 
+    location.href="dataRecord.html?"+'txt='+encodeURI(tempName+'|'+dataKey);
 
 
 }

@@ -169,7 +169,7 @@ function createDatabases(wb,tempName,dataName) {
     var keypath=sheet0['A1'].v;
     var dataAll=XLSX.utils.sheet_to_json(sheet0);
     var db;
-
+    var flag=0;
     var request=window.indexedDB.open(tempName);
     request.onerror=function (ev) {
         console.log('数据库打开报错');
@@ -180,9 +180,14 @@ function createDatabases(wb,tempName,dataName) {
         // db=ev.target.result;
         // var name=db.objectStoreNames;
         // alert(name[0]);
+        if (flag==0){
+            alert('该模版原数据库被删除请重新导入');
+            window.indexedDB.deleteDatabase(tempName);
+        }
     }
 
         request.onupgradeneeded=function (ev) {
+          flag=1;
            db=ev.target.result;
             if (db.objectStoreNames.contains(dataName)) {
                 db.deleteObjectStore(dataName);

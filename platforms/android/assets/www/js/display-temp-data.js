@@ -36,7 +36,7 @@ function displayDataList() {
         console.log('数据库打开报错');
     }
     request.onsuccess=function (ev) {
-
+        indexedDB.deleteDatabase(tempName);
         db=ev.target.result;
         if (db.objectStoreNames.length==0){
             $("#mainPage").append('<p align="center">什么数据都没有哦！</p>');
@@ -47,7 +47,7 @@ function displayDataList() {
             var dataNames = db.objectStoreNames;//获取数据表名
             var dataName = dataNames[0];
 
-            var  ts=db.transaction(dataName,'readwrite');
+            var  ts=db.transaction(dataName);
             var object=ts.objectStore(dataName);
             var re=object.openCursor();
 
@@ -61,6 +61,7 @@ function displayDataList() {
                 $('#dataList').append(li);
                 cursor.continue();
             }else {
+
                 $('ul').listview('refresh');
             }
 

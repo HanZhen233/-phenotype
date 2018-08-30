@@ -11,7 +11,7 @@
     <meta name="msapplication-tap-highlight" content="no">
 
 
-
+    <script type="text/javascript" src="cordova.js"></script>
     <!--引入jQuery及Mobile-->
 
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
@@ -26,12 +26,16 @@
 
     <!--引入自定义js-->
     <!--<script src="js/index.js"></script>-->
+
+    <!--初始化文件系统-->
+    <script type="text/javascript"src="js/init-file-system.js"></script>
     <!--主界面返回按钮直接退出js-->
     <script type="text/javascript" src="js/backbutton.js"></script>
     <!--跳转三主界面js-->
     <script type="text/javascript"src="js/skip.js"></script>
     <!--展示模版与数据列表-->
     <script type="text/javascript"src="js/display-temp-data.js"></script>
+
 </head>
 
 <body onload="displayTemplates()" >

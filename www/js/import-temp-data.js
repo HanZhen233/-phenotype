@@ -45,6 +45,7 @@ function importTemplate(obj) {//导入
          localStorage.setItem(templates[0],JSON.stringify(str));
         alert("模版导入成功！");
         $("#selectTemplate").empty();
+        $("#selectTemplate1").empty();
         loadTemplates();
     }
     reader.readAsBinaryString(f);
@@ -54,6 +55,7 @@ function importTemplate(obj) {//导入
 function loadTemplates(){
     for(var i=0;i<window.localStorage.length;i++){
         $("#selectTemplate").append("<option value="+window.localStorage.key(i)+">"+window.localStorage.key(i)+"</option>")
+        $("#selectTemplate1").append("<option value="+window.localStorage.key(i)+">"+window.localStorage.key(i)+"</option>")
     }
 }
 // 导入数据
@@ -118,7 +120,7 @@ function importData(obj) {
      //使用indexedDB实现
         createDatabases(wb,tempName,dataName);
         // 储存模版与数据的关系
-      var r=window.localStorage.getItem('');
+      // var r=window.localStorage.getItem('');
 
 
     };

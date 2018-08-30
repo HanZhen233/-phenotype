@@ -10,7 +10,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
 
-
+    <script type="text/javascript" src="cordova.js"></script>
     <!--引入jQuery及Mobile-->
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
@@ -33,6 +33,8 @@
 
     <!--导入模版与数据-->
     <script type="text/javascript" src="js/import-temp-data.js"></script>
+    <!--导出模版与数据-->
+    <script type="text/javascript" src="js/export-temp-data.js"></script>
 </head>
 
 <body onload="loadTemplates()">
@@ -54,9 +56,14 @@
                 <input type="file" onchange="importData(this)">
                 <p id="showData"></p>
             </div>
+
             <div id="export">
                 <p>导出数据</p>
-                <button>请选择</button>
+                <select  id="selectTemplate1">
+                    <option value="null">请选择导出数据对应的模版</option>
+                </select>
+                <button onclick="exportTempAndData()">确定</button>
+
             </div>
         </div>
 

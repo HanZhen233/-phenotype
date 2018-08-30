@@ -45,6 +45,7 @@ function importTemplate(obj) {//导入
          localStorage.setItem(templates[0],JSON.stringify(str));
         alert("模版导入成功！");
         $("#selectTemplate").empty();
+        $("#selectTemplate1").empty();
         loadTemplates();
     }
     reader.readAsBinaryString(f);
@@ -54,6 +55,7 @@ function importTemplate(obj) {//导入
 function loadTemplates(){
     for(var i=0;i<window.localStorage.length;i++){
         $("#selectTemplate").append("<option value="+window.localStorage.key(i)+">"+window.localStorage.key(i)+"</option>")
+        $("#selectTemplate1").append("<option value="+window.localStorage.key(i)+">"+window.localStorage.key(i)+"</option>")
     }
 }
 // 导入数据
@@ -118,7 +120,7 @@ function importData(obj) {
      //使用indexedDB实现
         createDatabases(wb,tempName,dataName);
         // 储存模版与数据的关系
-      var r=window.localStorage.getItem('');
+      // var r=window.localStorage.getItem('');
 
 
     };
@@ -169,7 +171,7 @@ function createDatabases(wb,tempName,dataName) {
     var keypath=sheet0['A1'].v;
     var dataAll=XLSX.utils.sheet_to_json(sheet0);
     var db;
-
+    var flag=0;
     var request=window.indexedDB.open(tempName);
     request.onerror=function (ev) {
         console.log('数据库打开报错');
@@ -180,9 +182,14 @@ function createDatabases(wb,tempName,dataName) {
         // db=ev.target.result;
         // var name=db.objectStoreNames;
         // alert(name[0]);
+        if (flag==0){
+            alert('该模版原数据库被删除请重新导入');
+            window.indexedDB.deleteDatabase(tempName);
+        }
     }
 
         request.onupgradeneeded=function (ev) {
+          flag=1;
            db=ev.target.result;
             if (db.objectStoreNames.contains(dataName)) {
                 db.deleteObjectStore(dataName);

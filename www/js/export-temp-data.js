@@ -75,7 +75,7 @@ function dataToFile(dataList,dataName) {
         return buf;
     }
     /* the saveAs call downloads a file on the local machine */
-    saveAs(new Blob([s2ab(wbout)],{type:""}),"test"+".xlsx");
+    saveAs(new Blob([s2ab(wbout)],{type:""}),dataName+".xlsx");
 
 }
 
@@ -90,6 +90,61 @@ function saveAs(obj, fileName) {//当然可以自定义简单的下载文件实�
     //     URL.revokeObjectURL(obj); //用URL.revokeObjectURL()来释放这个object URL
     // }, 100);
 
+    var dirUri = cordova.file.externalRootDirectory;
 
+    window.resolveLocalFileSystemURI(dirUri,function (Entry) {
+        Entry.getDirectory("表型采集模版与数据", {
+            create: true,
+        },function (dirEntry) {
+            dirEntry.getDirectory('data', { create: true }, function (subDirEntry) {
+                savefile(subDirEntry,obj,fileName);
+            }, onErrorCreateFile);
 
+        },onErrorGetDir)
+
+    })
+   alert('导出成功！')
 }
+
+
+
+
+function savefile(dirEntry,fileData, fileName){
+    dirEntry.getFile(
+        fileName, {
+            create: true,
+            exclusive: false
+        },
+        function (fileEntry) {
+            writeFile(fileEntry, fileData);
+
+        }, onErrorCreateFile);
+}
+
+function writeFile(fileEntry, dataObj) {
+    // Create a FileWriter object for our FileEntry (log.txt).
+    fileEntry.createWriter(function (fileWriter) {
+        fileWriter.onwriteend = function () {
+            console.log('Successful file write...');
+        };
+
+        fileWriter.onerror = function (e) {
+            console.log('Failed file write: ' + e.toString());
+        };
+        fileWriter.write(dataObj);
+
+    });
+}
+
+
+
+
+
+function onErrorCreateFile(e) {
+    console.log('Failed create file: ' + e.toString());
+};
+
+function onErrorGetDir(error){
+    console.log("文件夹创建失败！")
+}
+

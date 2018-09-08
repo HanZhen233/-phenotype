@@ -20,28 +20,35 @@ function importTemplate(obj) {//导入
         // XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]])
 
         var sheet0=wb.Sheets[wb.SheetNames[0]];
-        var n,t;
-        var i=0;
-       for(z in sheet0) {
-           i++;
-           if (i<20){
-           if(sheet0[z].v=="性状名称")
-              n=z[0];
-           if(sheet0[z].v=="数据类型")
-               t=z[0];
+    //     var n,t;
+    //     var i=0;
+    //    for(z in sheet0) {
+    //        i++;
+    //        if (i<20){
+    //        if(sheet0[z].v=="性状名称")
+    //           n=z[0];
+    //        if(sheet0[z].v=="数据类型")
+    //            t=z[0];
+    //
+    //    }
+    // };
+    //
+    //     for(z in sheet0) {
+    //     if (z[0]==n&&sheet0[z].v!="性状名称"&&sheet0[z].v!="数据类型")
+    //         ke=sheet0[z].v ;
+    //     if(z[0]==t&&sheet0[z].v!="性状名称"&&sheet0[z].v!="数据类型")
+    //         str[ke]=sheet0[z].v;
+    //     }
 
-       }
-    };
+        str=XLSX.utils.sheet_to_json(sheet0);
 
-        for(z in sheet0) {
-        if (z[0]==n&&sheet0[z].v!="性状名称"&&sheet0[z].v!="数据类型")
-            ke=sheet0[z].v ;
-        if(z[0]==t&&sheet0[z].v!="性状名称"&&sheet0[z].v!="数据类型")
-            str[ke]=sheet0[z].v;
-        }
         var templates=new Array();
         var str1=obj.files[0].name;
         templates=str1.split(".");
+        if (window.localStorage.getItem(templates[0])!=null){
+
+        }
+
          localStorage.setItem(templates[0],JSON.stringify(str));
         alert("模版导入成功！");
         $("#selectTemplate").empty();
@@ -179,13 +186,23 @@ function createDatabases(wb,tempName,dataName) {
     request.onsuccess=function (ev) {
         // alert('已清除该模版的数据库，请重新导入');
         // indexedDB.deleteDatabase(tempName);
-        // db=ev.target.result;
+
         // var name=db.objectStoreNames;
         // alert(name[0]);
-        if (flag==0){
-            alert('该模版原数据库被删除请重新导入');
-            window.indexedDB.deleteDatabase(tempName);
+        // if (flag==0){
+        //     alert('该模版原数据库被删除请重新导入');
+        //     window.indexedDB.deleteDatabase(tempName);
+        // }
+
+        db=ev.target.result;
+        var  ts=db.transaction(dataName,'readwrite');
+        var object=ts.objectStore(dataName);
+        for(var i=0;i<dataAll.length;i++){
+            object.add(dataAll[i]);
         }
+        alert('导入成功！')
+
+
     }
 
         request.onupgradeneeded=function (ev) {
@@ -199,10 +216,7 @@ function createDatabases(wb,tempName,dataName) {
                 store=db.createObjectStore(dataName,{keyPath:keypath});
             }
 
-            for(var i=0;i<dataAll.length;i++){
-                store.add(dataAll[i]);
-            }
-            alert('导入成功！')
+
 
     }
 

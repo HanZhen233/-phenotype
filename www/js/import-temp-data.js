@@ -1,6 +1,6 @@
 var wb;//读取完成的数据
 var str={};
-var ke;
+
 function importTemplate(obj) {//导入
     if(!obj.files) {
         return;

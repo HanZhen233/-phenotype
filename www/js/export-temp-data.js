@@ -127,9 +127,12 @@ function writeFile(fileEntry, dataObj) {
     // Create a FileWriter object for our FileEntry (log.txt).
     fileEntry.createWriter(function (fileWriter) {
         fileWriter.onwriteend = function () {
-            alert('成功导出数据！');
-        };
 
+        };
+        fileWriter.onwrite=function () {
+
+            alert('导出成功！')
+        }
         fileWriter.onerror = function (e) {
             console.log('Failed file write: ' + e.toString());
         };

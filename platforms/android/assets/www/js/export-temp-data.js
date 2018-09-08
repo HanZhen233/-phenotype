@@ -40,7 +40,7 @@ function exportData(tempName) {
                    cursor.continue();
                 }
                 else {
-                    dataToFile(dataList,dataName);
+                    dataToFile(dataList,tempName,dataName);
                     console.log('遍历数据完成！')
                 }
             }
@@ -58,7 +58,7 @@ function exportData(tempName) {
 
 
 
-function dataToFile(dataList,dataName) {
+function dataToFile(dataList,tempName,dataName) {
 
     // alert(JSON.stringify(dataList));
 
@@ -75,13 +75,13 @@ function dataToFile(dataList,dataName) {
         return buf;
     }
     /* the saveAs call downloads a file on the local machine */
-    saveAs(new Blob([s2ab(wbout)],{type:""}),dataName+".xlsx");
+    saveAs(new Blob([s2ab(wbout)],{type:""}),tempName,dataName+".xlsx");
 
 }
 
 
 //写入到文件
-function saveAs(obj, fileName) {//当然可以自定义简单的下载文件实现方式
+function saveAs(obj,tempName,fileName) {//当然可以自定义简单的下载文件实现方式
     // var tmpa = document.createElement("a");
     // tmpa.download = fileName || "下载";
     // tmpa.href = URL.createObjectURL(obj); //绑定a标签
@@ -103,7 +103,9 @@ function saveAs(obj, fileName) {//当然可以自定义简单的下载文件实�
         },onErrorGetDir)
 
     })
-   alert('导出成功！')
+    // window.indexedDB.deleteDatabase(tempName);
+    // window.localStorage.removeItem(tempName);
+
 }
 
 
@@ -125,9 +127,12 @@ function writeFile(fileEntry, dataObj) {
     // Create a FileWriter object for our FileEntry (log.txt).
     fileEntry.createWriter(function (fileWriter) {
         fileWriter.onwriteend = function () {
-            console.log('Successful file write...');
-        };
 
+        };
+        fileWriter.onwrite=function () {
+
+            alert('导出成功！')
+        }
         fileWriter.onerror = function (e) {
             console.log('Failed file write: ' + e.toString());
         };
@@ -135,8 +140,6 @@ function writeFile(fileEntry, dataObj) {
 
     });
 }
-
-
 
 
 

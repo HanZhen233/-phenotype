@@ -27,11 +27,12 @@
     <script type="text/javascript" src="js/backbutton.js"></script>
     <!--跳转三主界面js-->
     <script type="text/javascript"src="js/skip.js"></script>
-
+    <!--设置js-->
+    <script type="text/javascript" src="js/setting.js"></script>
 
 </head>
 
-<body>
+<body onload="loadTemplates()">
     <div data-role="page" id="setting">
         <div data-role="header" data-position="fixed">
             <h1>设置</h1>
@@ -41,7 +42,15 @@
             <br/>
             <br/>
             <button>记录员信息</button>
-            <button>删除指定模版</button>
+            <br>
+            <br>
+            <select  id="selectTemplate">
+                <option value="null">请选择要删除的模版及其下数据</option>
+            </select>
+            <button onclick="deleteChosenTempAndData()">确定</button>
+
+            <br>
+            <br>
             <button>清除所有数据</button>
         </div>
 

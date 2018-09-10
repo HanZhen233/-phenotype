@@ -70,13 +70,13 @@ function importData(obj) {
     var getTemplate = document.getElementById("selectTemplate");
     getTemplate.options.selected =true ;
      var tempName=getTemplate.value;
-     var dataName=obj.files[0].name;
-     var temp=new Array();
-     temp=dataName.split('.');
-     dataName=temp[0];
+     // var dataName=obj.files[0].name;
+     // var temp=new Array();
+     // temp=dataName.split('.');
+     var dataName=tempName+'-data';
 
    if(tempName=="null") {
-       alert("请先选择模版");
+       alert("请刷新页面后选择模版");
        obj.files.name=null;
        return;
    }

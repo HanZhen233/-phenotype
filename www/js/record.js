@@ -1,7 +1,7 @@
 
 
 
-function dealData() {
+function dealData() { //加载数据
 var temp=new Array();
     temp=getTempNameAndRecordId();
     var tempName=temp[0];
@@ -9,7 +9,7 @@ var temp=new Array();
     getRecord(tempName,recordId);
 
 }
-
+//通过页面获得模版与数据名称
 function getTempNameAndRecordId() {
     var loc=location.href;
     var n1=loc.length;
@@ -49,7 +49,12 @@ function getRecord(tempName,recordId) {
                 //     break;
                 //
                 // }
-                fillTemplate(temp)
+                //创建模版
+                fillTemplate(temp);
+
+            //    填充数据
+                fillData(dataAll);
+
             }
         }
 
@@ -69,16 +74,16 @@ function fillTemplate(temp) {
 
        createLabels(item,_name,_type,_list);
 
-
    }
+    $('#showDetails').listview('refresh');
 
-    $('ul').listview('refresh');
+
 }
 
 function createLabels(_item,_name,_type,_list){
     var  _li=$('<li></li>');
     var _span=$('<span>'+_name+'</span>');
-
+    var _nobr=$('<nobr> : </nobr>');
 
    var _input;
     switch (_type){
@@ -90,12 +95,20 @@ function createLabels(_item,_name,_type,_list){
             _input=$('<input type="text" placeholder="请输入" >');
             break;
         case '图片':
-            _input=$('<img src="img/camera.png" ></img>');
+            _input=$('<img  class="camera" src="img/camera.png" ></img>');
             break;
         case '枚举':
             _input=$('<select > <option value="null">请选择</option></select>');
             var _listAll=new Array();
-            _listAll=_list.split('，');//中文字符
+            if(_list.indexOf('，')!=-1)
+        {
+            _listAll = _list.split('，');//中文逗号字符
+        }else if (_list.indexOf(',')!=-1){
+                _listAll = _list.split('，');//英文逗号字符
+            }
+            else{
+                _listAll = _list.split('、');//中文顿号字符
+            }
             for(var i=0 ;i<_listAll.length;i++){
                 _input.append("<option value="+_listAll[i]+'>'+_listAll[i]+'</option>');
             }
@@ -103,12 +116,59 @@ function createLabels(_item,_name,_type,_list){
         case '带2位小数点的正数':
             _input=$('<input type="number" step="0.01" placeholder="请输入" >');
             break;
+        case '日期':
+            _input=$('<input type="date" placeholder="请输入"  >');
+                break;
     }
     _li.append(_span);
+    _li.append(_nobr);
     _li.append(_input);
 
     $("#showDetails").append(_li);
 }
-function fillData() {
+function fillData(dataAll) {
+
+for(var i=0;i<$("#showDetails li").length;i++){
+    var _span=$("#showDetails li").eq(i).find('span');
+    var _input=$("#showDetails li").eq(i).find('input');
+    var _select=$("#showDetails li").eq(i).find('select')
+    if (_input!=null){
+        _input.val(dataAll[_span.text()]);
+
+    }
+    if (_select!=null){
+
+        var options=_select.find('option');
+        for (var j=0;j<options.length;j++)
+            if ($(options[j]).val()==dataAll[_span.text()]){
+                $(options[j]).attr("selected",true);
+            }
+
+
+
+    }
+
 
 }
+
+}
+
+function saveRecord() {
+
+}
+
+function deleteRecord() {
+
+}
+
+function cancelEdit() {
+
+}
+
+//拍照相关代码
+$(document).ready(function () {
+    $(".camera").click(function () {
+
+    //    拍照的相关代码
+    })
+});

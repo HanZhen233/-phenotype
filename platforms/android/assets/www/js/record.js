@@ -69,16 +69,16 @@ function fillTemplate(temp) {
 
        createLabels(item,_name,_type,_list);
 
-
    }
+    $('#showDetails').listview('refresh');
 
-    $('ul').listview('refresh');
+
 }
 
 function createLabels(_item,_name,_type,_list){
     var  _li=$('<li></li>');
     var _span=$('<span>'+_name+'</span>');
-
+    var _nobr=$('<nobr> : </nobr>');
 
    var _input;
     switch (_type){
@@ -95,7 +95,15 @@ function createLabels(_item,_name,_type,_list){
         case '枚举':
             _input=$('<select > <option value="null">请选择</option></select>');
             var _listAll=new Array();
-            _listAll=_list.split('，');//中文字符
+            if(_list.indexOf('，')!=-1)
+        {
+            _listAll = _list.split('，');//中文字符
+        }else if (_list.indexOf(',')!=-1){
+                _listAll = _list.split('，');//英文逗号字符
+            }
+            else{
+                _listAll = _list.split('、');
+            }
             for(var i=0 ;i<_listAll.length;i++){
                 _input.append("<option value="+_listAll[i]+'>'+_listAll[i]+'</option>');
             }
@@ -103,8 +111,12 @@ function createLabels(_item,_name,_type,_list){
         case '带2位小数点的正数':
             _input=$('<input type="number" step="0.01" placeholder="请输入" >');
             break;
+        case '日期':
+            _input=$('<input type="date" placeholder="请输入"  >');
+                break;
     }
     _li.append(_span);
+    _li.append(_nobr);
     _li.append(_input);
 
     $("#showDetails").append(_li);
@@ -112,3 +124,16 @@ function createLabels(_item,_name,_type,_list){
 function fillData() {
 
 }
+
+function saveRecord() {
+
+}
+
+function deleteRecord() {
+
+}
+
+function cancelEdit() {
+
+}
+

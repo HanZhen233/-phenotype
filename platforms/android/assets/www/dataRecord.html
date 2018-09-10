@@ -11,7 +11,7 @@
     <!--js-xlsx库-->
 
     <!--引入自定义CSS-->
-
+    <link rel="stylesheet" href="css/jqbar.css">
     <!--引入自定义js-->
     <script type="text/javascript" src="js/record.js"></script>
 
@@ -27,6 +27,18 @@
         <h1>
             <span>数据记录</span>
         </h1>
+        <div data-role="navbar">
+            <ul>
+                <li id="previous">
+                    <a  data-icon="previous">上一条</a>
+                </li>
+
+                <li id="next">
+                    <a data-icon="next">下一条</a>
+                </li>
+            </ul>
+        </div>
+
     </div>
     <div role="main" data-role="content" id="mainData">
      <ul   data-role="listview" id="showDetails">
@@ -61,6 +73,24 @@
 
      </ul>
     </div>
+
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li id="cancel">
+                    <a  data-icon="cancel">返回</a>
+                </li>
+                <li id="add">
+                    <a   data-icon="add">新建记录</a>
+                </li>
+                <li id="save">
+                    <a data-icon="save">保存</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
 </div>>
 </body>
 </html>

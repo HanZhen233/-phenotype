@@ -21,7 +21,9 @@ function  writeDirectory(){
             dirEntry.getDirectory('data', { create: true }, function (subDirEntry) {
                 //createFile(subDirEntry, "hangge.txt");
             }, onErrorGetDir);
-
+            dirEntry.getDirectory('photos', { create: true }, function (subDirEntry) {
+                //createFile(subDirEntry, "hangge.txt");
+            }, onErrorGetDir);
         },onErrorCreateFile)
     },errorCallback)
 

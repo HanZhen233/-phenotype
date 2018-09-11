@@ -6,6 +6,7 @@ var temp=new Array();
     temp=getTempNameAndRecordId();
     var tempName=temp[0];
     var recordId=temp[1];
+    initPhotoSystem();
     getRecord(tempName,recordId);
 
 }
@@ -17,6 +18,11 @@ function getTempNameAndRecordId() {
     var tempName=decodeURI(loc.substr(n2+1,n1-n2));
     var temp=tempName.split('|')
     return temp;
+}
+
+
+function initPhotoSystem() {
+    
 }
 
 
@@ -79,7 +85,7 @@ function fillTemplate(temp) {
 
 
 }
-
+//根据模版加载元素标签
 function createLabels(_item,_name,_type,_list){
     var  _li=$('<li></li>');
     var _span=$('<span>'+_name+'</span>');
@@ -89,16 +95,16 @@ function createLabels(_item,_name,_type,_list){
     switch (_type){
         case '整数':
         case 'Small Whole Number':
-            _input=$('<input type="number" placeholder="请输入" align="right">');
+            _input=$('<input  type="number" class="_input" placeholder="请输入" align="right">');
             break;
         case '文字':
-            _input=$('<input type="text" placeholder="请输入" >');
+            _input=$('<input type="text" class="_input" placeholder="请输入" >');
             break;
         case '图片':
-            _input=$('<img  class="camera" src="img/camera.png" ></img>');
+            _input=$('<img  class="camera" src="img/camera.png" >');
             break;
         case '枚举':
-            _input=$('<select > <option value="null">请选择</option></select>');
+            _input=$('<select class="_select"> <option value="null">请选择</option></select>');
             var _listAll=new Array();
             if(_list.indexOf('，')!=-1)
         {
@@ -114,10 +120,10 @@ function createLabels(_item,_name,_type,_list){
             }
             break;
         case '带2位小数点的正数':
-            _input=$('<input type="number" step="0.01" placeholder="请输入" >');
+            _input=$('<input type="number" step="0.01" class="_input" placeholder="请输入" >');
             break;
         case '日期':
-            _input=$('<input type="date" placeholder="请输入"  >');
+            _input=$('<input  type="date" class="_input date1"  >');
                 break;
     }
     _li.append(_span);
@@ -126,30 +132,60 @@ function createLabels(_item,_name,_type,_list){
 
     $("#showDetails").append(_li);
 }
+//将数据加载到标签中
 function fillData(dataAll) {
 
 for(var i=0;i<$("#showDetails li").length;i++){
     var _span=$("#showDetails li").eq(i).find('span');
-    var _input=$("#showDetails li").eq(i).find('input');
-    var _select=$("#showDetails li").eq(i).find('select')
-    if (_input!=null){
-        _input.val(dataAll[_span.text()]);
+    var _input=$("#showDetails li").eq(i).find('input');//普通输入文本，日期，数字
+    var _select=$("#showDetails li").eq(i).find('select')//枚举类型的
+
+    // $("#showDetails li").eq(i).append(s);
+    if (_input.hasClass('_input')){
+
+        if (_input.hasClass('date1')){//填入日期类型
+            _input.attr('value',dataAll[_span.text()]);
+        }
+        else {
+
+            _input.val(dataAll[_span.text()]);//填入数字，文本类型
+        }
+
 
     }
-    if (_select!=null){
+    else if (_select.hasClass('_select')){//下拉选择菜单类型
 
         var options=_select.find('option');
         for (var j=0;j<options.length;j++)
             if ($(options[j]).val()==dataAll[_span.text()]){
                 $(options[j]).attr("selected",true);
             }
-
-
-
+    }
+   else{
+        var photoLabel=$("#showDetails li").eq(i);
+        var photoName=_span.text();
+        var photoPath=dataAll[photoName];
+        loadPhoto(photoLabel,photoName,photoPath);
     }
 
 
 }
+
+}
+
+//点击拍照响应
+$(document).ready(function () {
+    $(".camera").click(function () {
+
+
+    })
+});
+
+
+
+//加载图片。
+function loadPhoto(photoLabel,photoName,photoPath) {
+
 
 }
 
@@ -166,9 +202,6 @@ function cancelEdit() {
 }
 
 //拍照相关代码
-$(document).ready(function () {
-    $(".camera").click(function () {
 
-    //    拍照的相关代码
-    })
-});
+
+

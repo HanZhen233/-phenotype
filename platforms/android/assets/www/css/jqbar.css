@@ -1,0 +1,44 @@
+
+.ui-icon-record:after{
+    background-image:url(../img/record.png);
+    background-size: 18px 18px;
+    background-color: white;
+    }
+.ui-icon-file_transfer:after{
+    background-image:url(../img/file_transfer.png);
+    background-size: 18px 18px;
+    background-color: white;
+}
+.ui-icon-setting:after{
+    background-image:url(../img/setting.png);
+    background-size: 18px 18px;
+    background-color: white;
+}
+
+.ui-icon-previous:after{
+    background-image:url(../img/previous.png);
+    background-size: 18px 18px;
+    background-color: white;
+}
+
+.ui-icon-next:after{
+    background-image:url(../img/next.png);
+    background-size: 18px 18px;
+    background-color: white;
+}
+.ui-icon-cancel:after{
+    background-image:url(../img/back.png);
+    background-size: 18px 18px;
+    background-color: white;
+}
+
+.ui-icon-add:after{
+    background-image:url(../img/add.png);
+    background-size: 18px 18px;
+    background-color: white;
+}
+.ui-icon-save:after{
+    background-image:url(../img/save.png);
+    background-size: 18px 18px;
+    background-color: white;
+}

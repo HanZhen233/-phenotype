@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content=" style-src 'self' 'unsafe-inline'; media-src *">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <!--引入jQuery及Mobile-->
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+
+
+    <!--引入自定义CSS-->
+    <!--底部导航栏样式-->
+    <link rel="stylesheet " href="css/jqbar.css">
+
+    <!--引入自定义js-->
+    <!--<script src="js/index.js"></script>-->
+
+    <!--初始化文件系统-->
+    <script type="text/javascript"src="js/init-file-system.js"></script>
+    <!--主界面返回按钮直接退出js-->
+    <script type="text/javascript" src="js/backbutton.js"></script>
+    <!--跳转三主界面js-->
+    <script type="text/javascript"src="js/skip.js"></script>
+    <!--展示模版与数据列表-->
+    <script type="text/javascript"src="js/display-temp-data.js"></script>
+
+</head>
+
+<body onload="displayTemplates()" >
+
+<!--模版列表-->
+    <div data-role="page" id="template_list" >
+
+        <div data-role="header" data-position="fixed">
+            <!--<a href="#" data-rel="back" data-icon="arrow-l" data-iconpos="notext" value="Icon only"></a>-->
+            <h1>
+                <span>模板记录</span>
+            </h1>
+            <!--<a href="manage_template.html">管理模板</a>-->
+        </div>
+
+        <div role="main" data-role="content" id="mainContent">
+
+            <ul data-role="listview" data-filter="true" data-inset="true" id="tempList" >
+            <!--<ul id="tempList">-->
+                <!--<li>-->
+                    <!--<a href="#data_list">-->
+                        <!--<span name="template_name">大豆</span>-->
+                        <!--<span class="ui-li-count">12</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#data_list">-->
+                        <!--<span name="template_name">油菜</span>-->
+                        <!--<span class="ui-li-count">24</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#data_list">-->
+                        <!--<span name="template_name">小麦</span>-->
+                        <!--<span class="ui-li-count">122</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+
+
+            </ul>
+
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li id="page_index">
+                        <a  data-icon="record">数据记录 </a>
+                    </li>
+                    <li id="page_dataTransmission">
+                        <a   data-icon="file_transfer">数据导入导出 </a>
+                    </li>
+                    <li id="page_setting">
+                        <a data-icon="setting">设置 </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--<div data-role="page" id="data_detail">-->
+        <!--&lt;!&ndash; <div data-role="header" data-position="fixed">-->
+            <!--<h1>模板记录</h1>-->
+        <!--</div> &ndash;&gt;-->
+        <!--<div data-role="header" data-position="fixed">-->
+            <!--<a href="#" data-rel="back" data-icon="arrow-l" data-iconpos="notext" value="Icon only"></a>-->
+            <!--<h1>-->
+                <!--<span id="title">数据详情</span>-->
+            <!--</h1>-->
+            <!--<a href="manage_template.html">管理模板</a>-->
+        <!--</div>-->
+
+        <!--<div role="main" data-role="content">-->
+            <!--<ul data-role="listview" data-filter="true" data-inset="true">-->
+
+            <!--</ul>-->
+
+        <!--</div>-->
+
+        <!--<div data-role="footer" data-position="fixed">-->
+            <!--<div data-role="navbar">-->
+                <!--<ul>-->
+                    <!--<li id="page_index">-->
+                        <!--<a  data-icon="record">数据记录 </a>-->
+                    <!--</li>-->
+                    <!--<li id="page_dataTransmission">-->
+                        <!--<a   data-icon="file_transfer">数据导入导出 </a>-->
+                    <!--</li>-->
+                    <!--<li id="page_setting">-->
+                        <!--<a data-icon="setting">设置 </a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+
+</body>
+
+</html>

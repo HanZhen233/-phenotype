@@ -175,7 +175,7 @@ function importData(obj) {
 //采用indexedDB
 function createDatabases(wb,tempName,dataName) {
     var sheet0=wb.Sheets[wb.SheetNames[0]];
-    var keypath=sheet0['A1'].v;
+    var keyPath=sheet0['A1'].v;
     var dataAll=XLSX.utils.sheet_to_json(sheet0);
     var db;
     var flag=0;
@@ -210,10 +210,10 @@ function createDatabases(wb,tempName,dataName) {
            db=ev.target.result;
             if (db.objectStoreNames.contains(dataName)) {
                 db.deleteObjectStore(dataName);
-                store = db.createObjectStore(dataName, {keyPath: keypath});
+                store = db.createObjectStore(dataName, {keyPath: keyPath});
             }
             else {
-                store=db.createObjectStore(dataName,{keyPath:keypath});
+                store=db.createObjectStore(dataName,{keyPath:keyPath});
             }
 
 

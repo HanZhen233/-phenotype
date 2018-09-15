@@ -1,45 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
     <title>记录详情</title>
 
     <!--引入jQuery及Mobile-->
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
-    <!--js-xlsx库-->
 
     <!--引入自定义CSS-->
     <link rel="stylesheet" href="css/jqbar.css">
     <!--引入自定义js-->
+    <!--引入自带cordova.js注意不要写成js/cordova.js-->
+    <script type="text/javascript" src="cordova.js"></script>
+
+    <!--加载数据模版-->
+    <script type="text/javascript"src="js/fillTempList.js"></script>
+    <!--加载数据相关操作-->
+    <script type="text/javascript" src="js/importRecord.js"></script>
+    <!--拍照并保存图片-->
+    <script type="text/javascript" src="js/take-save-photos.js"></script>
+    <!--新建数据编辑页面-->
+    <script type="text/javascript"src="js/addRecord.js"></script>
+
+
+
+
     <!--cordova 自带的js-->
-    <script type="text/javascript" src="js/cordova.js"></script>
-    <!--引入加载模版与数据相关操作的js的js-->
-    <script type="text/javascript" src="js/record.js"></script>
 
 
+    <script>
+        //返回键监听返回上一级
+        document.addEventListener("deviceready",onDeviceReady,false);
+        function onDeviceReady() {
+            document.addEventListener("backbutton",onBackKeyDown,false);
+        };
+        function onBackKeyDown() {
+            var loc=location.href;
+            var n1=loc.length;
+            var n2=loc.indexOf('=');
+            var str=decodeURI(loc.substr(n2+1,n1-n2));
+            var temp_dataKey=str.split('|');
+            var tempName=temp_dataKey[0];
+//    返回数据列表界面
+            location.href="dataList.html?"+"txt="+encodeURI(tempName);
+        }
+    </script>
 
 
 </head>
 <body onload="dealData()">
-<script>
-    //返回键监听返回上一级
-    document.addEventListener("deviceready",onDeviceReady,false);
-    function onDeviceReady() {
-        document.addEventListener("backbutton",onBackKeyDown,false);
-    };
-    function onBackKeyDown() {
-        var loc=location.href;
-        var n1=loc.length;
-        var n2=loc.indexOf('=');
-        var str=decodeURI(loc.substr(n2+1,n1-n2));
-        var temp_dataKey=str.split('|');
-        var tempName=temp_dataKey[0];
-//    返回数据列表界面
-        location.href="dataList.html?"+"txt="+encodeURI(tempName);
-    }
-</script>
+
+
 <div data-role="page"  >
 
     <div data-role="header" data-position="fixed">
@@ -60,6 +78,7 @@
 
     </div>
     <div role="main" data-role="content" id="mainData">
+
      <ul   data-role="listview" id="showDetails">
          <!--<li >-->
              <!--<span  >材料编号RecId</span>-->
@@ -110,6 +129,8 @@
     </div>
 
 
-</div>>
+</div>
+
+
 </body>
 </html>

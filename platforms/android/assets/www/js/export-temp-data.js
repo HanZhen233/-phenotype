@@ -75,13 +75,13 @@ function dataToFile(dataList,tempName,dataName) {
         return buf;
     }
     /* the saveAs call downloads a file on the local machine */
-    saveAs(new Blob([s2ab(wbout)],{type:""}),tempName,dataName+".xlsx");
+    saveAs(new Blob([s2ab(wbout)],{type:""}),dataName+".xlsx");
 
 }
 
 
 //写入到文件
-function saveAs(obj,tempName,fileName) {//当然可以自定义简单的下载文件实现方式
+function saveAs(obj,fileName) {//当然可以自定义简单的下载文件实现方式
     // var tmpa = document.createElement("a");
     // tmpa.download = fileName || "下载";
     // tmpa.href = URL.createObjectURL(obj); //绑定a标签

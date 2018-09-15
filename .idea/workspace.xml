@@ -1,245 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="727eae69-324c-4cc2-b2fb-49a5267e73e7" name="Default" comment="">
+    <list default="true" id="de38d694-358d-4d92-b983-cd8d9ad4b3b4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/.appveyor.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/.eslintrc.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/.gitattributes" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/.github/PULL_REQUEST_TEMPLATE.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/.npmignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/.ratignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/.travis.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/CONTRIBUTING.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/NOTICE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/RELEASENOTES.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/appium-tests/android/android.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/appium-tests/helpers/cameraHelper.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/appium-tests/ios/ios.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/de/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/de/index.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/es/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/es/index.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/fr/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/fr/index.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/android-fail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/android-success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/blackberry-fail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/blackberry-success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/browser-fail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/browser-success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/firefox-fail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/firefox-success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/fireos-fail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/fireos-success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/ios-fail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/ios-success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/ubuntu-fail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/ubuntu-success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/windows-fail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/windows-success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/wp8-fail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/img/wp8-success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/it/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/it/index.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/ja/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/ja/index.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/ko/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/ko/index.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/pl/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/pl/index.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/ru/index.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/zh/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/doc/zh/index.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/jsdoc2md/TEMPLATE.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/plugin.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/android/CameraLauncher.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/android/CordovaUri.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/android/ExifHelper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/android/FileHelper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/android/FileProvider.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/android/xml/camera_provider_paths.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/browser/CameraProxy.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/ios/CDVCamera.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/ios/CDVCamera.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/ios/CDVExif.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/ios/CDVJpegHeaderWriter.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/ios/CDVJpegHeaderWriter.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/ios/UIImage+CropScaleOrientation.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/ios/UIImage+CropScaleOrientation.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/osx/CDVCamera.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/osx/CDVCamera.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/src/windows/CameraProxy.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/.npmignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/CDVCameraTest.xcworkspace/contents.xcworkspacedata" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/CDVCameraTest.xcworkspace/xcshareddata/CDVCameraTest.xccheckout" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/CDVCameraTest.xcworkspace/xcshareddata/xcschemes/CordovaLib.xcscheme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/CDVCameraTest/CDVCameraLibTests/CameraTest.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/CDVCameraTest/CDVCameraLibTests/Info.plist" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/CDVCameraTest/CDVCameraTest.xcodeproj/project.pbxproj" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/CDVCameraTest/CDVCameraTest.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/CDVCameraTest/CDVCameraTest.xcodeproj/project.xcworkspace/xcshareddata/CDVCameraTest.xccheckout" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/CDVCameraTest/CDVCameraTest.xcodeproj/xcshareddata/xcschemes/CDVCameraLib.xcscheme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/CDVCameraTest/CDVCameraTest.xcodeproj/xcshareddata/xcschemes/CDVCameraLibTests.xcscheme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/doc/de/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/doc/es/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/doc/fr/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/doc/it/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/doc/ja/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/doc/ko/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/doc/pl/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/doc/zh/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/ios/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/plugin.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/tests/tests.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/types/index.d.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/www/Camera.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/www/CameraConstants.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/www/CameraPopoverHandle.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/www/CameraPopoverOptions.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-camera/www/ios/CameraPopoverHandle.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-whitelist/.github/PULL_REQUEST_TEMPLATE.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-whitelist/CONTRIBUTING.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-whitelist/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-whitelist/NOTICE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-whitelist/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-whitelist/RELEASENOTES.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-whitelist/doc/de/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-whitelist/doc/es/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-whitelist/doc/fr/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-whitelist/doc/it/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-whitelist/doc/ja/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-whitelist/doc/ko/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-whitelist/doc/pl/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-whitelist/doc/zh/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-whitelist/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-whitelist/plugin.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-whitelist/src/android/WhitelistPlugin.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/platforms/platforms.json" afterPath="$PROJECT_DIR$/platforms/platforms.json" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/CONTRIBUTING.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/NOTICE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/RELEASENOTES.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/appium-tests/android/android.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/appium-tests/helpers/cameraHelper.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/appium-tests/ios/ios.spec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/de/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/de/index.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/es/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/es/index.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/fr/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/fr/index.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/img/android-fail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/img/android-success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/img/blackberry-fail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/img/blackberry-success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/img/browser-fail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/img/browser-success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/img/firefox-fail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/img/firefox-success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/img/fireos-fail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/img/fireos-success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/img/ios-fail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/img/ios-success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/img/ubuntu-fail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/img/ubuntu-success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/img/windows-fail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/img/windows-success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/img/wp8-fail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/img/wp8-success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/it/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/it/index.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/ja/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/ja/index.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/ko/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/ko/index.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/pl/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/pl/index.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/ru/index.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/zh/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/doc/zh/index.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/jsdoc2md/TEMPLATE.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/plugin.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/src/android/CameraLauncher.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/src/android/CordovaUri.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/src/android/ExifHelper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/src/android/FileHelper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/src/android/FileProvider.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/src/android/xml/camera_provider_paths.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/src/browser/CameraProxy.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/src/ios/CDVCamera.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/src/ios/CDVCamera.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/src/ios/CDVExif.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/src/ios/CDVJpegHeaderWriter.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/src/ios/CDVJpegHeaderWriter.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/src/ios/UIImage+CropScaleOrientation.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/src/ios/UIImage+CropScaleOrientation.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/src/osx/CDVCamera.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/src/osx/CDVCamera.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/src/windows/CameraProxy.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/.npmignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/CDVCameraTest.xcworkspace/contents.xcworkspacedata" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/CDVCameraTest.xcworkspace/xcshareddata/CDVCameraTest.xccheckout" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/CDVCameraTest.xcworkspace/xcshareddata/xcschemes/CordovaLib.xcscheme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/CDVCameraTest/CDVCameraLibTests/CameraTest.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/CDVCameraTest/CDVCameraLibTests/Info.plist" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/CDVCameraTest/CDVCameraTest.xcodeproj/project.pbxproj" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/CDVCameraTest/CDVCameraTest.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/CDVCameraTest/CDVCameraTest.xcodeproj/project.xcworkspace/xcshareddata/CDVCameraTest.xccheckout" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/CDVCameraTest/CDVCameraTest.xcodeproj/xcshareddata/xcschemes/CDVCameraLib.xcscheme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/CDVCameraTest/CDVCameraTest.xcodeproj/xcshareddata/xcschemes/CDVCameraLibTests.xcscheme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/doc/de/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/doc/es/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/doc/fr/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/doc/it/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/doc/ja/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/doc/ko/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/doc/pl/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/doc/zh/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/plugin.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/tests.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/types/index.d.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/www/Camera.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/www/CameraConstants.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/www/CameraPopoverHandle.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/www/CameraPopoverOptions.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/www/ios/CameraPopoverHandle.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/CONTRIBUTING.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/NOTICE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/RELEASENOTES.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/doc/de/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/doc/es/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/doc/fr/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/doc/it/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/doc/ja/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/doc/ko/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/doc/pl/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/doc/zh/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/plugin.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/src/android/WhitelistPlugin.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_CordovaLib_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" afterPath="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/android.json" afterPath="$PROJECT_DIR$/platforms/android/android.json" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/assets/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/cordova_plugins.js" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/assets/www/dataList.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/dataList.html" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/assets/www/dataRecord.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/dataRecord.html" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/assets/www/dataTransmission.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/dataTransmission.html" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/index.html" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/export-temp-data.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/export-temp-data.js" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/import-temp-data.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/import-temp-data.js" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/record.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/build.gradle" afterPath="$PROJECT_DIR$/platforms/android/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/platform_www/cordova_plugins.js" afterPath="$PROJECT_DIR$/platforms/android/platform_www/cordova_plugins.js" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/project.properties" afterPath="$PROJECT_DIR$/platforms/android/project.properties" />
+      <change beforePath="$PROJECT_DIR$/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/platforms/android/res/xml/config.xml" />
+      <change beforePath="$PROJECT_DIR$/plugins/android.json" afterPath="$PROJECT_DIR$/plugins/android.json" />
       <change beforePath="$PROJECT_DIR$/plugins/fetch.json" afterPath="$PROJECT_DIR$/plugins/fetch.json" />
       <change beforePath="$PROJECT_DIR$/www/dataList.html" afterPath="$PROJECT_DIR$/www/dataList.html" />
       <change beforePath="$PROJECT_DIR$/www/dataRecord.html" afterPath="$PROJECT_DIR$/www/dataRecord.html" />
       <change beforePath="$PROJECT_DIR$/www/dataTransmission.html" afterPath="$PROJECT_DIR$/www/dataTransmission.html" />
+      <change beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
       <change beforePath="$PROJECT_DIR$/www/js/export-temp-data.js" afterPath="$PROJECT_DIR$/www/js/export-temp-data.js" />
-      <change beforePath="$PROJECT_DIR$/www/js/init-file-system.js" afterPath="$PROJECT_DIR$/www/js/init-file-system.js" />
-      <change beforePath="$PROJECT_DIR$/www/js/record.js" afterPath="$PROJECT_DIR$/www/js/record.js" />
+      <change beforePath="$PROJECT_DIR$/www/js/import-temp-data.js" afterPath="$PROJECT_DIR$/www/js/import-temp-data.js" />
+      <change beforePath="$PROJECT_DIR$/www/js/record.js" afterPath="$PROJECT_DIR$/www/js/importRecord.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -256,32 +58,12 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="record.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/record.js">
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="202" column="4" lean-forward="false" selection-start-line="202" selection-start-column="4" selection-end-line="202" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="export-temp-data.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/export-temp-data.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="display-temp-data.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/display-temp-data.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="62" />
+            <state relative-caret-position="92">
+              <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -290,48 +72,48 @@
       <file leaf-file-name="dataRecord.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/dataRecord.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="16" selection-end-column="64" />
+            <state relative-caret-position="506">
+              <caret line="22" column="2" lean-forward="false" selection-start-line="22" selection-start-column="2" selection-end-line="23" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="backbutton.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/backbutton.js">
+      <file leaf-file-name="fillTempList.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/fillTempList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="-927">
+              <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dataList.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/dataList.html">
+      <file leaf-file-name="addRecord.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/addRecord.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="46" column="50" lean-forward="false" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+            <state relative-caret-position="131">
+              <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="skip.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/skip.js">
+      <file leaf-file-name="importRecord.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/js/importRecord.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+            <state relative-caret-position="-23">
+              <caret line="50" column="72" lean-forward="false" selection-start-line="50" selection-start-column="72" selection-end-line="50" selection-end-column="72" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/index.html">
+      <file leaf-file-name="import-temp-data.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/import-temp-data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1334">
-              <caret line="83" column="20" lean-forward="false" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
+            <state relative-caret-position="374">
+              <caret line="216" column="13" lean-forward="false" selection-start-line="209" selection-start-column="10" selection-end-line="216" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -345,11 +127,6 @@
         <option value="JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>dis</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -637,6 +414,7 @@
         <entry key="$PROJECT_DIR$/../cordovaHttpdTest" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../field_experiment-master" value="PREVIEW" />
         <entry key="$PROJECT_DIR$" value="IMPORT" />
+        <entry key="$PROJECT_DIR$/../test" value="PREVIEW" />
         <entry key="E:/GithubSource/web-chatroom-stomp-master" value="PREVIEW" />
         <entry key="E:/UBS-for-android" value="PREVIEW" />
         <entry key="E:/eclipse-for-Service/leorowe-ERP-master" value="PREVIEW" />
@@ -647,17 +425,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/www/js/setting.js" />
-        <option value="$PROJECT_DIR$/www/setting.html" />
         <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/css/jqbar.css" />
-        <option value="$PROJECT_DIR$/www/js/import-temp-data.js" />
-        <option value="$PROJECT_DIR$/www/dataTransmission.html" />
-        <option value="$PROJECT_DIR$/www/js/init-file-system.js" />
-        <option value="$PROJECT_DIR$/www/js/export-temp-data.js" />
+        <option value="$PROJECT_DIR$/www/js/take-save-photos.js" />
         <option value="$PROJECT_DIR$/www/js/record.js" />
+        <option value="$PROJECT_DIR$/www/js/fillTempList.js" />
         <option value="$PROJECT_DIR$/www/dataRecord.html" />
         <option value="$PROJECT_DIR$/www/dataList.html" />
+        <option value="$PROJECT_DIR$/www/js/addRecord.js" />
+        <option value="$PROJECT_DIR$/www/js/import-temp-data.js" />
+        <option value="$PROJECT_DIR$/www/js/importRecord.js" />
       </list>
     </option>
   </component>
@@ -667,18 +443,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-    <handled-path value="$PROJECT_DIR$/platforms/android/cordova/node_modules" />
-  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="y" value="3" />
     <option name="width" value="1366" />
     <option name="height" value="712" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -695,19 +464,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="phenotype" type="b2602c69:ProjectViewProjectNode" />
               <item name="phenotype" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="phenotype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="phenotype" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="phenotype" type="b2602c69:ProjectViewProjectNode" />
@@ -724,8 +487,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -733,14 +497,9 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\CordovaProjects\phenotype\www\img" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -754,7 +513,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -795,7 +554,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="dataRecord.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/phenotype/www/dataRecord.html" />
     <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/phenotype/www/index.html" />
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -837,14 +595,9 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.dataRecord.html" />
-    </list>
     <recent_temporary>
-      <list size="2">
+      <list size="1">
         <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.dataRecord.html" />
       </list>
     </recent_temporary>
   </component>
@@ -856,57 +609,81 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="727eae69-324c-4cc2-b2fb-49a5267e73e7" name="Default" comment="" />
-      <created>1536410490765</created>
+      <changelist id="de38d694-358d-4d92-b983-cd8d9ad4b3b4" name="Default" comment="" />
+      <created>1536986157957</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1536410490765</updated>
-      <workItem from="1536410512837" duration="15241000" />
-      <workItem from="1536474226281" duration="2840000" />
-      <workItem from="1536576406572" duration="8548000" />
-      <workItem from="1536655489162" duration="8635000" />
-      <workItem from="1536665170796" duration="599000" />
-      <workItem from="1536666666699" duration="4883000" />
-      <workItem from="1536735277438" duration="1708000" />
-      <workItem from="1536750396824" duration="6765000" />
+      <updated>1536986157957</updated>
+      <workItem from="1536986162159" duration="7095000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49219000" />
+    <option name="totallyTimeSpent" value="7095000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="3" width="1366" height="712" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298791" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.53367877" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27641654" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50949913" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24961714" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298791" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298791" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22107081" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39896372" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298791" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298791" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39896372" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41278064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24961714" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -919,377 +696,90 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/js/init-file-system.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/export-temp-data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2254">
-          <caret line="98" column="84" lean-forward="false" selection-start-line="98" selection-start-column="84" selection-end-line="98" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/dataRecord.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="44" lean-forward="false" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1909">
-          <caret line="83" column="20" lean-forward="false" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/record.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/import-temp-data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1633">
-          <caret line="71" column="18" lean-forward="false" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/init-file-system.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/export-temp-data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2254">
-          <caret line="98" column="84" lean-forward="false" selection-start-line="98" selection-start-column="84" selection-end-line="98" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/dataRecord.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="44" lean-forward="false" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1909">
-          <caret line="83" column="20" lean-forward="false" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/record.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/import-temp-data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1633">
-          <caret line="71" column="18" lean-forward="true" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/dataRecord.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1058">
-          <caret line="46" column="36" lean-forward="true" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1909">
-          <caret line="83" column="20" lean-forward="false" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/record.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/dataRecord.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="989">
-          <caret line="43" column="36" lean-forward="false" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/dataList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="44" lean-forward="false" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/setting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1127">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1909">
-          <caret line="83" column="20" lean-forward="false" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/jqbar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="40" column="42" lean-forward="false" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/import-temp-data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="75" column="33" lean-forward="false" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/record.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/dataRecord.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="989">
-          <caret line="43" column="36" lean-forward="false" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/dataList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="44" lean-forward="false" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/jqbar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="40" column="42" lean-forward="false" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/img/camera.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/img/previous.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/img/add.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/img/save.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/setting.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/start-server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/jqbar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="40" column="42" lean-forward="false" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/setting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platforms/platforms.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1518">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platforms/android/cordova/lib/builders/GradleBuilder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="218" column="21" lean-forward="true" selection-start-line="218" selection-start-column="21" selection-end-line="218" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/import-temp-data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="71" column="18" lean-forward="false" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/android.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/fetch.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/init-file-system.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/dataTransmission.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1662">
-          <caret line="96" column="66" lean-forward="false" selection-start-line="96" selection-start-column="66" selection-end-line="96" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/backbutton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1334">
-          <caret line="83" column="20" lean-forward="false" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/display-temp-data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/record.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="202" column="4" lean-forward="false" selection-start-line="202" selection-start-column="4" selection-end-line="202" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/export-temp-data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+        <state relative-caret-position="-138">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/skip.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/dataRecord.html">
+    <entry file="file://$PROJECT_DIR$/www/js/take-save-photos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="16" selection-end-column="64" />
+        <state relative-caret-position="-1852">
+          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/dataList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="46" column="50" lean-forward="false" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+        <state relative-caret-position="595">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/dataRecord.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="2" lean-forward="false" selection-start-line="22" selection-start-column="2" selection-end-line="23" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/display-temp-data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="30" lean-forward="true" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/import-temp-data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="216" column="13" lean-forward="false" selection-start-line="209" selection-start-column="10" selection-end-line="216" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/fillTempList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-927">
+          <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/addRecord.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/importRecord.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="50" column="72" lean-forward="false" selection-start-line="50" selection-start-column="72" selection-end-line="50" selection-end-column="72" />
           <folding />
         </state>
       </provider>

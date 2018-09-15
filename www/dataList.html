@@ -19,13 +19,15 @@
 
 <!--引入自定义js-->
 
-<!--cordova 自带的js-->
-<script type="text/javascript" src="js/cordova.js"></script>
+<!--引入自带cordova.js注意不要写成js/cordova.js-->
+<script type="text/javascript" src="cordova.js"></script>
 <!--展示数据列表-->
 <script type="text/javascript"src="js/display-temp-data.js"></script>
+<!--新建数据编辑页面-->
+<script type="text/javascript"src="js/addRecord.js"></script>
 
-
-<body onload="displayDataList()">
+<!--加载数据模版-->
+<script type="text/javascript"src="js/fillTempList.js"></script>
 
 <script>
     //返回键监听返回上一级
@@ -38,6 +40,9 @@
         location.href="index.html";
     }
 </script>
+<body onload="displayDataList()">
+
+
 
 <!--数据列表-->
 <div data-role="page" >
@@ -63,7 +68,7 @@
         <div data-role="navbar">
             <ul>
                 <li id="add">
-                    <a  data-icon="add">新建数据 </a>
+                    <a  data-icon="add" onclick="addRecord()">新建数据 </a>
                 </li>
             </ul>
         </div>

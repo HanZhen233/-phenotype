@@ -198,7 +198,7 @@ function createDatabases(wb,tempName,dataName) {
         var  ts=db.transaction(dataName,'readwrite');
         var object=ts.objectStore(dataName);
         for(var i=0;i<dataAll.length;i++){
-            object.add(dataAll[i]);
+            object.put(dataAll[i]);
         }
         alert('导入成功！')
 

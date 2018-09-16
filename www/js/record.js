@@ -83,12 +83,11 @@ for(var i=0;i<$("#showDetails li").length;i++){
     var _input=$("#showDetails li").eq(i).find('input');//普通输入文本，日期，数字
     var _select=$("#showDetails li").eq(i).find('select')//枚举类型的
     var _button=$("#showDetails li").eq(i).find('button')
-    // $("#showDetails li").eq(i).append(s);
+
     if (_input.hasClass('_input')){
             _input.val(dataAll[_span.text()]);
     }
     else if (_select.hasClass('_select')){//下拉选择菜单类型
-
         var options=_select.find('option');
         for (var j=0;j<options.length;j++)
             if ($(options[j]).val()==dataAll[_span.text()]){
@@ -98,41 +97,111 @@ for(var i=0;i<$("#showDetails li").length;i++){
    else{
 
         var photoLabel=$("#showDetails li").eq(i);
-        var photoName=_span.text();
-        var photoPath=dataAll[photoName];
-
-
-
-        loadPhoto(photoLabel,photoName,photoPath);
+        var photoName=dataAll[_span.text()];
+        // if (photoName!="null") {
+        //     loadPhoto(photoLabel, photoName);
+        // }
     }
 
 }
 }
 
-
-
-
-
-
-
-
-
-
 //加载图片。
-function loadPhoto(photoLabel,photoName,photoPath) {
+function loadPhoto(photoLabel,photoName) {
+    var dirUri = cordova.file.externalRootDirectory;
+    window.resolveLocalFileSystemURI(dirUri,function (Entry) {
+        Entry.getDirectory("表型采集模版与数据", {
+            create: true,
+        },function (dirEntry) {
+            dirEntry.getDirectory('photos', { create: true }, function (subDirEntry) {
+                readPhoto(subDirEntry,photoLabel,photoName);
+            }, onErrorGetDir);
 
+        },onErrorGetDir)
+    })
 
 }
+function readPhoto(dirEntry,photoLabel,photoName) {
+    dirEntry.getFile(
+        photoName, {
+            create: true,
+            exclusive: false
+        },
+        function (fileEntry) {
+            var _li=photoLabel;
+            var photo=$("<img class='photo' width='40%' height='60px' src='' >") ;
+            photo.src=fileEntry.toURL();
+            _li.append(photo);
+        }, onErrorCreateFile);
+}
 
+function onErrorCreateFile(e) {
+    console.log('Failed create file: ' + e.toString());
+};
+
+function onErrorGetDir(error){
+    console.log("文件夹创建失败！")
+}
+
+
+
+
+
+
+//保存数据
 function saveRecord() {
 
+    var temp=getTempNameAndRecordId();
+    var tempName=temp[0];
+    var recordId=temp[1];
+
+    var dataAll={};
+        for(var i=0;i<$("#showDetails li").length;i++){
+        var _span=$("#showDetails li").eq(i).find('span');
+        var _input=$("#showDetails li").eq(i).find('input');//普通输入文本，日期，数字
+        var _select=$("#showDetails li").eq(i).find('select')//枚举类型的
+        var _img=$("#showDetails li").eq(i).find('img');
+
+        if (_input.hasClass('_input')){
+
+            dataAll[_span.text()]=_input.val();
+
+        }
+
+        else if (_select.hasClass('_select')){//下拉选择菜单类型=
+            // _select.options.selected =true ;
+
+            dataAll[_span.text()]=_select.val();
+
+        }
+        else {
+            if(_img.hasClass('photo')){
+                dataAll[_span.text()]=tempName+"-"+recordId+"-"+_span.text()+".jpg";
+            }
+            else{
+                dataAll[_span.text()]="null";
+            }
+        }
+    }
+    saveToDatabase(tempName,dataAll);
+}
+function saveToDatabase(tempName,dataAll) {
+
+    var dataName=tempName+"-data";
+    var request=window.indexedDB.open(tempName);
+    request.onerror=function (ev) {
+        console.log('数据库打开报错');
+    }
+    request.onsuccess=function (ev) {
+        var db=ev.target.result;
+        var  ts=db.transaction(dataName,'readwrite');
+        var object=ts.objectStore(dataName);
+                object.put(dataAll);
+                alert('保存成功！')
+    }
+
 }
 
-
-
-function deleteRecord() {
-
-}
 
 function cancelEdit() {
     var loc=location.href;

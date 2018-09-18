@@ -5,6 +5,7 @@ var temp=new Array();
     var recordId=temp[1];
     getRecord(tempName,recordId);
 
+
 }
 //通过页面获得模版与数据名称
 function getTempNameAndRecordId() {
@@ -23,9 +24,10 @@ function getRecord(tempName,recordId) {
     var temp=JSON.parse(window.localStorage.getItem(tempName));//模版数据json。
     //创建模版
     fillTemplate(temp);
-    var flag=0;
-    var request=window.indexedDB.open(tempName);
 
+    var flag=0;
+    window.localStorage.removeItem('图片');//图片要涉及到文件读写，数据库事务操作开了线程无法，为解决冲突
+    var request=window.indexedDB.open(tempName);
     request.onerror=function (ev) {
         console.log('数据库打开报错');
     }
@@ -33,8 +35,7 @@ function getRecord(tempName,recordId) {
         var db=ev.target.result;
             var dataNames = db.objectStoreNames;//获取数据表名
             var dataName = dataNames[0];
-
-            var ts=db.transaction(dataName,'readwrite');
+            var ts=db.transaction(dataName,'readonly');
             var object=ts.objectStore(dataName);
             var detail=object.get(recordId);
 
@@ -45,7 +46,7 @@ function getRecord(tempName,recordId) {
             detail.onsuccess=function (ev2) {
             //数据库操作是新的线程，因此后续操作应该在此基础上继续。
             //     hello(JSON.stringify(detail.result));
-                var dataAll=detail.result;//详细数据json
+                dataAll =detail.result;//详细数据json
             //    填充数据
                 if (dataAll==null){
                     var _input=$("#showDetails li").eq(0).find('input');
@@ -54,7 +55,9 @@ function getRecord(tempName,recordId) {
                 else {
                     fillData(dataAll);
                 }
+
             }
+
         }
         request.onupgradeneeded=function (ev) {
             flag=1;
@@ -74,6 +77,7 @@ function getRecord(tempName,recordId) {
             }
         }
 
+
 }
 
 function fillData(dataAll) {
@@ -82,7 +86,7 @@ for(var i=0;i<$("#showDetails li").length;i++){
     var _span=$("#showDetails li").eq(i).find('span');
     var _input=$("#showDetails li").eq(i).find('input');//普通输入文本，日期，数字
     var _select=$("#showDetails li").eq(i).find('select')//枚举类型的
-    var _button=$("#showDetails li").eq(i).find('button')
+    // var _button=$("#showDetails li").eq(i).find('button')
 
     if (_input.hasClass('_input')){
             _input.val(dataAll[_span.text()]);
@@ -95,52 +99,104 @@ for(var i=0;i<$("#showDetails li").length;i++){
             }
     }
    else{
+        var _li=$("#showDetails li").eq(i);
+        var photoURI=dataAll[_span.text()];
+        if (photoURI!="null"&&photoURI.indexOf(".jpg")!=-1) {
 
-        var photoLabel=$("#showDetails li").eq(i);
-        var photoName=dataAll[_span.text()];
-        // if (photoName!="null") {
+            var photo=$("<img class='photo' width='40%' height='70px' value='' >") ;
+            photo.val(photoURI);
+            photo.attr("src",photoURI);
+            _li.append(photo);
+
+        }
+        // if (photoName!="null"&&photoName.indexOf(".jpg")!=-1) {
         //     loadPhoto(photoLabel, photoName);
+        //     if( window.localStorage.getItem('图片')==null){
+        //         var str={};
+        //         str[_span.text()]=photoName;
+        //         window.localStorage.setItem('图片',JSON.stringify(str));
+        //     }
+        //     else {
+        //         var str= window.localStorage.getItem('图片');
+        //         str=JSON.parse(str);
+        //         str[_span.text()]=photoName;
+        //         window.localStorage.setItem('图片',JSON.stringify(str));
+        //     }
+
         // }
+
     }
 
 }
 }
 
+
+
+
+
+
+
+
+
 //加载图片。
-function loadPhoto(photoLabel,photoName) {
-    var dirUri = cordova.file.externalRootDirectory;
-    window.resolveLocalFileSystemURI(dirUri,function (Entry) {
-        Entry.getDirectory("表型采集模版与数据", {
-            create: true,
-        },function (dirEntry) {
-            dirEntry.getDirectory('photos', { create: true }, function (subDirEntry) {
-                readPhoto(subDirEntry,photoLabel,photoName);
-            }, onErrorGetDir);
+// function loadPhoto(photoLabel,photoName) {
+//     var dirUri = cordova.file.externalRootDirectory;
+//     alert( cordova.file.externalRootDirectory);
+//     window.resolveLocalFileSystemURI(dirUri,function (Entry) {
+//         Entry.getDirectory("表型采集模版与数据", {
+//             create: true,
+//         },function (dirEntry) {
+//             dirEntry.getDirectory('photos', { create: true }, function (subDirEntry) {
+//                 readPhoto(subDirEntry,photoLabel,photoName);
+//             }, onErrorGetDir);
+//
+//         },onErrorGetDir)
+//     })
+//
+// }
+// function readPhoto(dirEntry,photoLabel,photoName) {
+//     dirEntry.getFile(
+//         photoName, {
+//             create: true,
+//             exclusive: false
+//         },
+//         function (fileEntry) {
+//
+//             fileEntry.file(function (file) {
+//
+//                 var reader = new FileReader();
+//                 reader.onloadend = function() {
+//                     var blob = new Blob([new Uint8Array(this.result)], { type: "image/jpeg" });
+//                     displayPhoto(blob,photoLabel);
+//
+//                 };
+//
+//                 reader.readAsArrayBuffer(file);
+//
+//
+//             },onErrorReadFile)
+//         }, onErrorReadFile);
+// }
+// function displayPhoto(blob,_li) {
+//     // if (_li.find("img").hasClass('photo')){
+//     //     _li.find("img").attr("src",window.URL.createObjectURL(blob));
+//     // }
+//     // else {
+//     //     var photo=$("<img class='photo' width='40%' height='60px' >") ;
+//     //     photo.attr("src", window.URL.createObjectURL(blob));
+//     //     _li.append(photo);
+//     // }
+//     alert("hello")
+//     li.append("<p>haha</p>");
+// }
 
-        },onErrorGetDir)
-    })
-
+function onErrorReadFile(e) {
+    console.log('Failed read file: ' + e.toString());
 }
-function readPhoto(dirEntry,photoLabel,photoName) {
-    dirEntry.getFile(
-        photoName, {
-            create: true,
-            exclusive: false
-        },
-        function (fileEntry) {
-            var _li=photoLabel;
-            var photo=$("<img class='photo' width='40%' height='60px' src='' >") ;
-            photo.src=fileEntry.toURL();
-            _li.append(photo);
-        }, onErrorCreateFile);
-}
 
-function onErrorCreateFile(e) {
-    console.log('Failed create file: ' + e.toString());
-};
 
 function onErrorGetDir(error){
-    console.log("文件夹创建失败！")
+    console.log("文件夹读取失败！")
 }
 
 
@@ -176,7 +232,8 @@ function saveRecord() {
         }
         else {
             if(_img.hasClass('photo')){
-                dataAll[_span.text()]=tempName+"-"+recordId+"-"+_span.text()+".jpg";
+                // dataAll[_span.text()]=tempName+"-"+recordId+"-"+_span.text()+".jpg";
+                dataAll[_span.text()]=_img.val();
             }
             else{
                 dataAll[_span.text()]="null";

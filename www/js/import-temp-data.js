@@ -77,8 +77,7 @@ function importData(obj) {
 
    if(tempName=="null") {
        alert("请刷新页面后选择模版");
-       obj.files.name=null;
-       return;
+      location.href="dataTransmission.html";
    }
 
 //    导入数据

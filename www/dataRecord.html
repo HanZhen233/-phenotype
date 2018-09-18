@@ -24,6 +24,8 @@
     <script type="text/javascript"src="js/fillTempList.js"></script>
     <!--加载数据相关操作-->
     <script type="text/javascript" src="js/record.js"></script>
+    <!--异步加载图片-->
+    <script type="text/javascript" src="js/loadPhotos.js"></script>
     <!--拍照并保存图片-->
     <script type="text/javascript" src="js/take-save-photos.js"></script>
     <!--新建数据编辑页面-->
@@ -56,7 +58,12 @@
 
 </head>
 <body onload="dealData()">
+<script>
+    <!--异步加载图片-->
+    $(function () {
 
+    })
+</script>
 
 <div data-role="page"  >
 
@@ -133,4 +140,5 @@
 
 
 </body>
+
 </html>

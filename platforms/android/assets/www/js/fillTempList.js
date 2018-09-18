@@ -41,7 +41,7 @@ function createLabels(_item,_name,_type,_list) {
             break;
         case '图片':
             //<img  class="camera" src="img/camera.png" >
-            _input = $("<button id='' onclick='takePhoto(this)'>拍照</button>");
+            _input = $("<button id='' class='takePhoto' onclick='takePhoto(this)'>拍照</button>");
             _input.attr("id", _name);
             break;
         case '枚举':

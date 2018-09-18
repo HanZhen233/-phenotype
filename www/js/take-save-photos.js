@@ -2,7 +2,7 @@
 function takePhoto(obj) {
 
     var cameraOption= {
-        quality : 90,
+        quality : 95,
         destinationType : Camera.DestinationType.DATA_URL,//数据的格式（是文件地址还是编码）
         sourceType : Camera.PictureSourceType.CAMERA,//获取图片的由来
         allowEdit : true,//选择图片前允许简单编辑
@@ -16,23 +16,23 @@ function takePhoto(obj) {
 }
 
 function onCameraSuccess(imageURI,obj){
+
+
+    var temp=getTempNameAndRecordId();
+    var tempName=temp[0];
+    var recordId=temp[1];
     var _li=$(obj).parent();
     if (_li.find("img").hasClass('photo')){
         _li.find("img").attr("src","data:image/jpeg;base64," + imageURI);
     }
     else {
-        var photo=$("<img class='photo' width='40%' height='60px' >") ;
+        var photo=$("<img class='photo' width='40%' height='70px' value='' >") ;
         photo.attr("src","data:image/jpeg;base64," + imageURI);
+        photo.val(cordova.file.externalRootDirectory.toString()+'表型采集模版与数据/photos/'+tempName+"-"+recordId+"-"+obj.id+".jpg")
+        ;
+        $(obj).after(photo);
     }
-    $(obj).after(photo);
-    var loc=location.href;
-    var n1=loc.length;
-    var n2=loc.indexOf('=');
-    var tempName=decodeURI(loc.substr(n2+1,n1-n2));
-    var recordId;
-    var temp=tempName.split('|')
-    tempName=temp[0];
-    recordId=temp[1];
+
     var byteString=atob(imageURI);
     var ia = new Uint8Array(byteString.length);
     for(var i = 0; i < byteString.length; i++) {
@@ -52,6 +52,8 @@ function onCameraError(message) {
 function saveAs(obj,fileName) {//当然可以自定义简单的下载文件实现方式
 
     var dirUri = cordova.file.externalRootDirectory;
+
+
     window.resolveLocalFileSystemURI(dirUri,function (Entry) {
         Entry.getDirectory("表型采集模版与数据", {
             create: true,
@@ -83,7 +85,7 @@ function writeFile(fileEntry, dataObj) {
     // Create a FileWriter object for our FileEntry (log.txt).
     fileEntry.createWriter(function (fileWriter) {
         fileWriter.onwriteend = function () {
-
+        // alert(fileEntry.toURI());
         };
         fileWriter.onwrite=function () {
 

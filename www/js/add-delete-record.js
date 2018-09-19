@@ -1,7 +1,11 @@
 //添加数据
 function addRecord() {
-    var recordId = prompt("请输入材料编号", "");
-    if(recordId!="") {
+    var recordId = prompt("请输入材料编号","");
+    if(recordId=="") {
+        alert("请输入材料编号");
+    }else if(recordId==null){
+
+    }else {
         var loc = location.href;
         var n1 = loc.length;
         var n2 = loc.indexOf('=');
@@ -14,11 +18,36 @@ function addRecord() {
             tempName = temp[0];
             location.href = "dataRecord.html?" + 'txt=' + encodeURI(tempName + '|' + recordId);
         }
-    }else {
-        alert("请输入材料编号");
     }
+
+
 }
 //删除数据
-function deleteRecord() {
+function deleteRecord(obj) {
+    var recordId=obj.id;
+    var loc = location.href;
+    var n1 = loc.length;
+    var n2 = loc.indexOf('=');
+    var tempName = decodeURI(loc.substr(n2 + 1, n1 - n2));
+    if (tempName.indexOf('|') != -1) {
+        var temp = tempName.split('|');
+        tempName = temp[0];//如果不是从数据列表界面而是从数据中删除
+    }
+    deleteRecordFromDatabase(tempName,recordId)
+}
+function deleteRecordFromDatabase(tempName,recordId) {
+    var request=window.indexedDB.open(tempName);
+    var dataName=tempName+"-data";
+    request.onerror=function (ev) {
+        console.log('数据库打开报错');
+    }
+    request.onsuccess=function (ev) {
+        db=ev.target.result;
+        var  ts=db.transaction(dataName,'readwrite');
+        var object=ts.objectStore(dataName);
+        object.delete(recordId);
+        alert('删除成功！')
+        location.href = "dataList.html?" + 'txt=' + encodeURI(tempName);
+    }
 
 }

@@ -5,7 +5,7 @@
          var txt=$("<p align='center'></p>").text("暂时还没有模版与数据哦！")
          $("#mainContent").append(txt);
      }else{
-         var templist
+
          for (var i=0;i<length;i++){
              // var temp=$("<li></li>");
              // var span=$("<span></span>").text=window.localStorage.key(i);
@@ -54,10 +54,13 @@ function displayDataList() {
             re.onsuccess=function (ev2) {
             var cursor=ev2.target.result;
             if(cursor){
-                var  li=$('<li></li>');
-                var  a=$('<a onclick="toDataRecord(this)">'
-                    +cursor.primaryKey+'</a>');
+                var  li=$('<li ></li>');
+                var  a=$("<span onclick='toDataRecord(this)' >"+cursor.primaryKey+"</span>");
+                a.attr("id",cursor.primaryKey);
+                var deleteRecord=$("<img src='img/delete.png' onclick='deleteRecord(this)' align='right'>")
+                deleteRecord.attr("id",cursor.primaryKey);
                 li.append(a);
+                li.append(deleteRecord);
                 $('#dataList').append(li);
                 cursor.continue();
             }else {
@@ -74,12 +77,12 @@ function displayDataList() {
 
 
 function  toDataRecord(obj) {
-    var dataKey=obj.text;
+
+    var dataKey=obj.id;
     var loc=location.href;
     var n1=loc.length;
     var n2=loc.indexOf('=');
     var tempName=decodeURI(loc.substr(n2+1,n1-n2));
-
     location.href="dataRecord.html?"+'txt='+encodeURI(tempName+'|'+dataKey);
 
 

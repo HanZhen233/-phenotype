@@ -2,7 +2,7 @@
 function takePhoto(obj) {
 
     var cameraOption= {
-        quality : 95,
+        quality : 80,
         destinationType : Camera.DestinationType.DATA_URL,//数据的格式（是文件地址还是编码）
         sourceType : Camera.PictureSourceType.CAMERA,//获取图片的由来
         allowEdit : true,//选择图片前允许简单编辑

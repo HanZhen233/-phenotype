@@ -200,8 +200,6 @@ function createDatabases(wb,tempName,dataName) {
             object.put(dataAll[i]);
         }
         alert('导入成功！')
-
-
     }
 
         request.onupgradeneeded=function (ev) {
@@ -214,9 +212,6 @@ function createDatabases(wb,tempName,dataName) {
             else {
                 store=db.createObjectStore(dataName,{keyPath:keyPath});
             }
-
-
-
     }
 
 

@@ -60,20 +60,20 @@ function getRecord(tempName,recordId) {
 
         }
         request.onupgradeneeded=function (ev) {
-            flag=1;
+            var  db=ev.target.result;
             var dataName=tempName+'-data';
             var keyPath;
             for (var z in temp[0] ){
-                keyPath=z;
+                keyPath=temp[0][z];
                 break;
             }
-            db=ev.target.result;
+
             if (db.objectStoreNames.contains(dataName)) {
                 db.deleteObjectStore(dataName);
-                store = db.createObjectStore(dataName, {keyPath: keyPath});
+                var store = db.createObjectStore(dataName, {keyPath: keyPath});
             }
             else {
-                store=db.createObjectStore(dataName,{keyPath:keyPath});
+                var store=db.createObjectStore(dataName,{keyPath:keyPath});
             }
         }
 
@@ -209,7 +209,7 @@ function saveRecord() {
 
     var temp=getTempNameAndRecordId();
     var tempName=temp[0];
-    var recordId=temp[1];
+    // var recordId=temp[1];
 
     var dataAll={};
         for(var i=0;i<$("#showDetails li").length;i++){
@@ -243,8 +243,13 @@ function saveRecord() {
     saveToDatabase(tempName,dataAll);
 }
 function saveToDatabase(tempName,dataAll) {
-
+    var temp=JSON.parse(window.localStorage.getItem(tempName))
     var dataName=tempName+"-data";
+    var keyPath;
+    for (var z in temp[0] ){
+        keyPath=z;
+        break;
+    }
     var request=window.indexedDB.open(tempName);
     request.onerror=function (ev) {
         console.log('数据库打开报错');
@@ -256,7 +261,16 @@ function saveToDatabase(tempName,dataAll) {
                 object.put(dataAll);
                 alert('保存成功！')
     }
-
+    request.onupgradeneeded=function (ev) {
+        var db=ev.target.result;
+        if (db.objectStoreNames.contains(dataName)) {
+            db.deleteObjectStore(dataName);
+            var store = db.createObjectStore(dataName, {keyPath: keyPath});
+        }
+        else {
+            var store=db.createObjectStore(dataName,{keyPath:keyPath});
+        }
+    }
 }
 
 

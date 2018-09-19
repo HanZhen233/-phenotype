@@ -28,7 +28,7 @@ function createLabels(_item,_name,_type,_list) {
     switch (_type) {
         case '整数':
         case 'Small Whole Number':
-            _input = $('<input  type="number" class="_input" placeholder="请输入" align="right">');
+            _input = $('<input  type="number" class="_input" placeholder="请输入" align="right" align="right">');
             break;
         case '文字':
             _input = $('<input type="text" class="_input" placeholder="请输入" >');

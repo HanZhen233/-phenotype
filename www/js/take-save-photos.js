@@ -2,10 +2,10 @@
 function takePhoto(obj) {
 
     var cameraOption= {
-        quality : 80,
+        quality : 95,
         destinationType : Camera.DestinationType.DATA_URL,//数据的格式（是文件地址还是编码）
         sourceType : Camera.PictureSourceType.CAMERA,//获取图片的由来
-        allowEdit : true,//选择图片前允许简单编辑
+        allowEdit : false,//选择图片前允许简单编辑
         encodingType : Camera.EncodingType.JPEG,
         // targetWdith : 100,//压缩图片
         // targetHeight : 100,

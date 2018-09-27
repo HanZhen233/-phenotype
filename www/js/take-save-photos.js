@@ -6,6 +6,7 @@ function takePhoto(obj) {
         destinationType : Camera.DestinationType.DATA_URL,//数据的格式（是文件地址还是编码）
         sourceType : Camera.PictureSourceType.CAMERA,//获取图片的由来
         allowEdit : false,//选择图片前允许简单编辑
+        correctOrientation :true,
         encodingType : Camera.EncodingType.JPEG,
         // targetWdith : 100,//压缩图片
         // targetHeight : 100,

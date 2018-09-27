@@ -46,7 +46,7 @@ function getRecord(tempName,recordId) {
             detail.onsuccess=function (ev2) {
             //数据库操作是新的线程，因此后续操作应该在此基础上继续。
             //     hello(JSON.stringify(detail.result));
-                dataAll =detail.result;//详细数据json
+               var  dataAll =detail.result;//详细数据json
             //    填充数据
                 if (dataAll==null){
                     var _input=$("#showDetails li").eq(0).find('input');
@@ -285,6 +285,44 @@ function cancelEdit() {
     location.href="dataList.html?"+"txt="+encodeURI(tempName);
 }
 
+//跳转上下条
+function previousAndNext(isNext) {
+    var temp_dataKey=getTempNameAndRecordId();
+    var tempName=temp_dataKey[0];
+    var dataKey=temp_dataKey[1];
+    var dataName=tempName+"-data";
+    var request=window.indexedDB.open(tempName);
+    request.onerror=function (ev) {  };
+    request.onsuccess=function (ev) {
+        var  db=ev.target.result;
+        var  ts=db.transaction(dataName,'readonly');
+        var object=ts.objectStore(dataName);
+        var range;
+        var re;
+        if(isNext){
+            range=IDBKeyRange.lowerBound(dataKey,true);//从低到高，不包含
+            re=object.openCursor(range);//正序
+        }else{
+            range=IDBKeyRange.upperBound(dataKey,true);//从高到底，不包含
+            re=object.openCursor(range,"prev");//倒序
+        }
+        re.onerror=function (ev2) {
+            alert('没有数据');
+        }
+        re.onsuccess=function (ev2) {
+            var cursor=ev2.target.result;
+            if (cursor){
+                location.href = "dataRecord.html?" + 'txt=' + encodeURI(tempName + '|' + cursor.primaryKey);
+            }else {
+                alert('没有数据了');
+            }
+
+        }
 
 
+
+
+    }
+    
+}
 

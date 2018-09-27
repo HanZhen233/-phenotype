@@ -52,19 +52,23 @@
                 <p>导入模版</p>
             <p> 请选择要选择导入的模版文件</p>
             <input type="file" onchange="importTemplate(this)">
+                <HR align=center color=#C0C0C0 SIZE=5>
+                <!--align 线条位置（可选left、right、center）；width 线条长度；color 颜色；size 厚度-->
+                <br>
             <p>导入数据</p>
                 <select id="selectTemplate">
                     <option value="null">请选择模版</option>
                 </select>
                 <input type="file" onchange="importData(this)">
                 <p id="showData"></p>
+                <HR align=center color=#C0C0C0 SIZE=5>
+                <!--align 线条位置（可选left、right、center）；width 线条长度；color 颜色；size 厚度-->
             </div>
-            <br>
             <br>
             <div id="export">
                 <p>导出数据</p>
                 <select  id="selectTemplate1">
-                    <option value="null">请选择导出数据对应的模版</option>
+                    <option value="null">请选择要导出数据</option>
                 </select>
                 <button onclick="exportTempAndData()">确定</button>
 

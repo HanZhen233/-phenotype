@@ -4,24 +4,32 @@ function exportTempAndData() {
     var tempName=getTemplate.value;
 
     if (tempName=="null"){
-        alert('请先选择对用的模版名称');
+        navigator.notification.alert('请先选择到导出的数据',alertDismissed,'','OK');
+        // alert('请先选择对用的模版名称');
         return 0;
     }
 
     exportData(tempName);
 }
+//对话框被忽略
+function alertDismissed() {
+//    不做处理
+}
+
 
 //导出数据
 function exportData(tempName) {
     var request =window.indexedDB.open(tempName);
     var flag=0;
     request.onerror=function (ev) {
-        alert('打开错误！')
+        navigator.notification.alert('打开数据库错误！',alertDismissed,'','OK');
+        // alert('打开错误！')
     }
     request.onsuccess=function (ev) {
         var db=ev.target.result;
         if(flag==1){
-            alert('该模版没有数据！')
+            navigator.notification.alert('该模版没有数据！',alertDismissed,'','OK');
+            // alert('该模版没有数据！')
         }
         else{
             var dataNames = db.objectStoreNames;//获取数据表名
@@ -31,7 +39,9 @@ function exportData(tempName) {
             var re=object.openCursor();
             var i=0;
             var dataList=new Array();
-            re.onerror=function (ev2) { alert('打开数据库出错！') }
+            re.onerror=function (ev2) {
+                navigator.notification.alert('打开数据库错误！',alertDismissed,'','OK');
+            }
             re.onsuccess=function (ev2) {
                 var cursor=ev2.target.result;
                 if (cursor){
@@ -130,8 +140,8 @@ function writeFile(fileEntry, dataObj) {
 
         };
         fileWriter.onwrite=function () {
-
-            alert('导出成功！')
+            navigator.notification.alert('导出成功！',alertDismissed,'','OK');
+            // alert('导出成功！')
         }
         fileWriter.onerror = function (e) {
             console.log('Failed file write: ' + e.toString());

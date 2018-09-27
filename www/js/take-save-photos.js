@@ -44,7 +44,8 @@ function onCameraSuccess(imageURI,obj){
     saveAs(imgData,tempName+"-"+recordId+"-"+obj.id+".jpg");
 }
 function onCameraError(message) {
-    alert('Failed because: ' + message);
+    navigator.notification.alert('Failed because: ' + message,alertDismissed,'','OK');
+    // alert('Failed because: ' + message);
 }
 
 

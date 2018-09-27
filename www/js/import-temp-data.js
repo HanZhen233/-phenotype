@@ -50,7 +50,9 @@ function importTemplate(obj) {//导入
         }
 
          localStorage.setItem(templates[0],JSON.stringify(str));
-        alert("模版导入成功！");
+
+        navigator.notification.alert('模版导入成功！',alertDismissed,'','OK');
+        // alert("模版导入成功！");
         $("#selectTemplate").empty();
         $("#selectTemplate1").empty();
         loadTemplates();
@@ -58,11 +60,20 @@ function importTemplate(obj) {//导入
     reader.readAsBinaryString(f);
 
 }
+
+//对话框被忽略
+function alertDismissed() {
+//    不做处理
+}
+
+
+
 //加载模版名称供选择
 function loadTemplates(){
     for(var i=0;i<window.localStorage.length;i++){
         $("#selectTemplate").append("<option value="+window.localStorage.key(i)+">"+window.localStorage.key(i)+"</option>")
-        $("#selectTemplate1").append("<option value="+window.localStorage.key(i)+">"+window.localStorage.key(i)+"</option>")
+        var _option=$("<option value="+window.localStorage.key(i)+">"+window.localStorage.key(i)+"-data"+"</option>");
+        $("#selectTemplate1").append(_option);
     }
 }
 // 导入数据
@@ -76,7 +87,7 @@ function importData(obj) {
      var dataName=tempName+'-data';
 
    if(tempName=="null") {
-       alert("请刷新页面后选择模版");
+       navigator.notification.alert('请重新选择模版',alertDismissed,'','OK');
       location.href="dataTransmission.html";
    }
 
@@ -199,7 +210,8 @@ function createDatabases(wb,tempName,dataName) {
         for(var i=0;i<dataAll.length;i++){
             object.put(dataAll[i]);
         }
-        alert('导入成功！')
+        navigator.notification.alert('导入成功',alertDismissed,'','OK');
+        // alert('导入成功！')
     }
 
         request.onupgradeneeded=function (ev) {

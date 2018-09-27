@@ -36,18 +36,40 @@ function deleteRecord(obj) {
     deleteRecordFromDatabase(tempName,recordId)
 }
 function deleteRecordFromDatabase(tempName,recordId) {
-    var request=window.indexedDB.open(tempName);
-    var dataName=tempName+"-data";
-    request.onerror=function (ev) {
-        console.log('数据库打开报错');
-    }
-    request.onsuccess=function (ev) {
-        db=ev.target.result;
-        var  ts=db.transaction(dataName,'readwrite');
-        var object=ts.objectStore(dataName);
-        object.delete(recordId);
-        alert('删除成功！')
-        location.href = "dataList.html?" + 'txt=' + encodeURI(tempName);
-    }
+    navigator.notification.confirm(
+        '是否删除？',
+        function (choice) {
+            if(choice==1){
+                var request=window.indexedDB.open(tempName);
+                var dataName=tempName+"-data";
+                request.onerror=function (ev) {
+                    console.log('数据库打开报错');
+                }
+                request.onsuccess=function (ev) {
+                    db=ev.target.result;
+                    var  ts=db.transaction(dataName,'readwrite');
+                    var object=ts.objectStore(dataName);
+                    object.delete(recordId);
+                    navigator.notification.alert('删除成功',alertDismissed,'','OK');
+                    // alert('删除成功！')
+                    location.href = "dataList.html?" + 'txt=' + encodeURI(tempName);
+                }
+
+            }else{
+
+            }
+        },
+        '',
+        ['确认','取消']
+    )
+
+
 
 }
+//对话框被忽略
+function alertDismissed() {
+//    不做处理
+}
+
+
+    

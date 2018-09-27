@@ -41,7 +41,8 @@ function getRecord(tempName,recordId) {
 
 
             detail.onerror=function (ev2) {
-                alert('请填写数据！')
+                navigator.notification.alert('请填写数据！',alertDismissed,'','OK');
+                // alert('请填写数据！')
             }
             detail.onsuccess=function (ev2) {
             //数据库操作是新的线程，因此后续操作应该在此基础上继续。
@@ -259,7 +260,8 @@ function saveToDatabase(tempName,dataAll) {
         var  ts=db.transaction(dataName,'readwrite');
         var object=ts.objectStore(dataName);
                 object.put(dataAll);
-                alert('保存成功！')
+        navigator.notification.alert('保存成功！',alertDismissed,'','OK');
+                // alert('保存成功！')
     }
     request.onupgradeneeded=function (ev) {
         var db=ev.target.result;
@@ -307,14 +309,16 @@ function previousAndNext(isNext) {
             re=object.openCursor(range,"prev");//倒序
         }
         re.onerror=function (ev2) {
-            alert('没有数据');
+            navigator.notification.alert('没有数据了！',alertDismissed,'','OK');
+            // alert('没有数据');
         }
         re.onsuccess=function (ev2) {
             var cursor=ev2.target.result;
             if (cursor){
                 location.href = "dataRecord.html?" + 'txt=' + encodeURI(tempName + '|' + cursor.primaryKey);
             }else {
-                alert('没有数据了');
+                navigator.notification.alert('没有数据了！',alertDismissed,'','OK');
+                // alert('没有数据了');
             }
 
         }

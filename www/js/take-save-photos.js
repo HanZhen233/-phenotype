@@ -29,9 +29,9 @@ function onCameraSuccess(imageURI,obj){
     else {
         var photo=$("<img class='photo' width='40%' height='70px' value='' >") ;
         photo.attr("src","data:image/jpeg;base64," + imageURI);
-        photo.val(cordova.file.externalRootDirectory.toString()+'表型采集模版与数据/photos/'+tempName+"-"+recordId+"-"+obj.id+".jpg")
-        ;
+        photo.val(cordova.file.externalRootDirectory.toString()+'表型采集模版与数据/photos/'+tempName+"-"+recordId+"-"+obj.id+".jpg");
         $(obj).after(photo);
+        focusNextInput(obj);
     }
 
     var byteString=atob(imageURI);

@@ -2,7 +2,8 @@
 function addRecord() {
     var recordId = prompt("请输入材料编号","");
     if(recordId=="") {
-        alert("请输入材料编号");
+        navigator.notification.alert('请输入材料编号！',alertDismissed,'','OK');
+        // alert("请输入材料编号");
     }else if(recordId==null){
 
     }else {

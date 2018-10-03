@@ -20,9 +20,13 @@
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
 
 
+    <link rel="stylesheet" href="css/jquery.mobile.flatui.css">
     <!--引入自定义CSS-->
+    <!--界面大体样式-->
+    <link rel="stylesheet" href="css/general.css">
     <!--底部导航栏样式-->
     <link rel="stylesheet " href="css/jqbar.css">
+
 
     <!--引入自定义js-->
     <!--<script src="js/index.js"></script>-->
@@ -36,6 +40,9 @@
     <!--展示模版与数据列表-->
     <script type="text/javascript"src="js/display-temp-data.js"></script>
     <script type="text/javascript" src="js/take-save-photos.js"></script>
+
+
+
 </head>
 
 
@@ -43,9 +50,9 @@
 
 
 <!--模版列表-->
-    <div data-role="page" id="template_list" >
+    <div data-role="page" id="template_list" data-theme="b" >
 
-        <div data-role="header" data-position="fixed">
+        <div class="header" data-role="header" data-theme="" data-position="fixed">
             <!--<a href="#" data-rel="back" data-icon="arrow-l" data-iconpos="notext" value="Icon only"></a>-->
             <h1>
                 <span>模板记录</span>
@@ -53,7 +60,7 @@
             <!--<a href="manage_template.html">管理模板</a>-->
         </div>
 
-        <div role="main" data-role="content" id="mainContent">
+        <div role="main" data-role="content" id="mainContent" >
 
             <ul data-role="listview" data-filter="true" data-inset="true" id="tempList" >
             <!--<ul id="tempList">-->

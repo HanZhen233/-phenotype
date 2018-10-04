@@ -143,3 +143,58 @@ function importData(obj) {
     };
     reader.readAsBinaryString(f);
 }
+
+
+
+
+
+
+
+
+//采用indexedDB
+function createDatabases(wb,tempName,dataName) {
+    var sheet0=wb.Sheets[wb.SheetNames[0]];
+    var keyPath=sheet0['A1'].v;
+    var dataAll=XLSX.utils.sheet_to_json(sheet0);
+    var db;
+    var flag=0;
+    var request=window.indexedDB.open(tempName);
+    request.onerror=function (ev) {
+        console.log('数据库打开报错');
+    }
+    request.onsuccess=function (ev) {
+        // alert('已清除该模版的数据库，请重新导入');
+        // indexedDB.deleteDatabase(tempName);
+
+        // var name=db.objectStoreNames;
+        // alert(name[0]);
+        // if (flag==0){
+        //     alert('该模版原数据库被删除请重新导入');
+        //     window.indexedDB.deleteDatabase(tempName);
+        // }
+
+        db=ev.target.result;
+        var  ts=db.transaction(dataName,'readwrite');
+        var object=ts.objectStore(dataName);
+        for(var i=0;i<dataAll.length;i++){
+            object.put(dataAll[i]);
+        }
+        navigator.notification.alert('导入成功',alertDismissed,'','OK');
+        // alert('导入成功！')
+    }
+
+    request.onupgradeneeded=function (ev) {
+        flag=1;
+        db=ev.target.result;
+        if (db.objectStoreNames.contains(dataName)) {
+            db.deleteObjectStore(dataName);
+            store = db.createObjectStore(dataName, {keyPath: keyPath});
+        }
+        else {
+            store=db.createObjectStore(dataName,{keyPath:keyPath});
+        }
+    }
+
+
+}
+

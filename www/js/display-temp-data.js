@@ -1,7 +1,14 @@
 
  function displayTemplates() {
     var length=window.localStorage.length;
-     if(length==0){
+    var num=0;
+    for(var i=0;i<length;i++){
+        var tkey= JSON.stringify(window.localStorage.key(i));
+        if(tkey.indexOf("模版")!=-1){
+            num=num+1;
+        }
+    }
+     if(length==0||num==0){
          var txt=$("<p align='center'></p>").text("暂时还没有模版与数据哦！")
          $("#mainContent").append(txt);
      }else{
@@ -12,6 +19,9 @@
              //  temp=temp.append(span);
              // templist=$('<li>'+window.localStorage.key(i)+'</li>');
              // templist=templist.append();
+             if(window.localStorage.key(i).indexOf("模版")==-1){
+                 continue;
+             }
              var  li=$('<li></li>');
              var  a=$('<a  onclick=toDataList(this)'+'>'
                  +window.localStorage.key(i)+'</a>');

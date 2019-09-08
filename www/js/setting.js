@@ -1,5 +1,8 @@
 function loadTemplates(){
+
     for(var i=0;i<window.localStorage.length;i++){
+        if(window.localStorage.key(i).indexOf("模版")==-1)
+            continue;
         var _option=$("<option value="+window.localStorage.key(i)+">"+window.localStorage.key(i)+"-data"+"</option>");
       ;
         $("#selectTemplate").append(_option);
